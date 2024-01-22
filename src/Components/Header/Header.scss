@@ -1,0 +1,18 @@
+.header {
+    background-color: black;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 1rem;
+
+    &__ul {
+        display: flex;
+        list-style: none;
+    }
+
+    &__li {
+        padding-left: 1rem;
+    }
+    a {
+        color: white;
+    }
+}
