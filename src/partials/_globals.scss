@@ -6,17 +6,37 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Glegoo', serif;
-
-}
-
-body {
-    color: $black;
-    background-color: $white;
+    font-family: 'Montserrat', serif;
 
 }
 
 a {
 
     text-decoration: none;
+}
+
+$fw-reg: 300;
+$fw-bold: 900;
+
+$clr-light: #fff;
+$clr-dark: #303030;
+$clr-accent: #16e0bd;
+
+$fs-h1: 3rem;
+$fs-h2: 2.25rem;
+$fs-h3: 1.25rem;
+$fs-body: 1rem;
+
+@include tablet {
+    --fs-h1: 4.5;
+    --fs-h2: 3.75rem;
+    --fs-h3: 1.5rem;
+    --fs-body: 1.125rem;
+}
+
+@include desktop {
+    --fs-h1: 4.5;
+    --fs-h2: 3.75rem;
+    --fs-h3: 1.5rem;
+    --fs-body: 1.125rem;
 }

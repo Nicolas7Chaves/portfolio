@@ -1,3 +1,10 @@
+@use '../../partials/fonts' as *;
+@use '../../partials/mixins' as *;
+@use '../../partials/globals' as *;
+@use '../../partials/variables' as *;
+
+
+
 .section__title {
     color: red;
 }
