@@ -1,0 +1,117 @@
+@use '../../partials/fonts' as *;
+@use '../../partials/mixins' as *;
+@use '../../partials/globals' as *;
+@use '../../partials/variables' as *;
+
+.home {
+    //Home Container
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 8rem;
+    margin-top: 8rem;
+    position: relative;
+    width: 100vw;
+    height: 10rem;
+
+}
+
+.hero {
+    // Contains Hey Im Nicolas and Role
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+
+    &__portrait {
+        width: 10.5rem;
+        height: 10.5rem;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        z-index: 2;
+        position: absolute;
+        // top: 50%;
+        // left: 30%;
+        transform: translate(-160%, -15%);
+    }
+}
+
+.section__title--hero {
+    // Hey I'm
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    align-items: flex-start;
+    font-weight: 400;
+    background-color: red;
+    color: black;
+    margin-bottom: .5rem;
+}
+
+.section__title--name {
+    // Name
+    font-size: 2rem;
+    font-weight: 700;
+    color: black;
+}
+
+.section__subtitle--hero {
+    // Role
+    background-color: $clr-accent;
+    display: flex;
+    color: $clr-light;
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 29rem;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+strong {
+    font-weight: $fw-bold;
+}
+
+
+
+.skills {
+    background-color: $clr-dark;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    &__container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 70%;
+    }
+
+    &__item {
+        width: 5rem;
+        height: 7rem;
+        background-color: red;
+    }
+
+    &__image {
+        width: 4rem;
+        height: 4rem;
+        background-color: white;
+    }
+
+    &__title {
+        font-size: $fs-body;
+    }
+}
+
+.section__title--skills {
+    font-size: $fs-h2;
+    color: purple;
+    padding-top: 1rem;
+}
