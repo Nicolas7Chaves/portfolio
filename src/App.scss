@@ -1,3 +1,8 @@
+@use '/src/partials/fonts' as *;
+@use '/src/partials/mixins' as *;
+@use '/src/partials/globals' as *;
+@use '/src/partials/variables' as *;
+
 * {
   margin: 0;
   padding: 0;
