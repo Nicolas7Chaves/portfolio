@@ -25,7 +25,7 @@ function Hero() {
                 <div className="skills__container">
                     {skills.map((skill, index) => (
                         <div key={index} className="skills__item">
-                            <img className="skills__image" src={skill.img} alt={skill.title}/>
+                            <img className="skills__image" src={require(`../../Assets/skillsData/${skill.img}`)} alt={skill.title}/>
                             <p className="skills__title">{skill.title}</p>
                         </div>
                     ))}

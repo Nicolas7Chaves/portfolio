@@ -1,11 +1,11 @@
+
 [
     {
-        "img": "path/to/your/image1.png",
-        "title": "Skill One"
+        "img": "html.svg",
+        "title": "HTML"
     },
     {
-        "img": "path/to/your/image2.png",
-        "title": "Skill Two"
+        "img": "css.png",
+        "title": "CSS"
     }
-    
 ]
