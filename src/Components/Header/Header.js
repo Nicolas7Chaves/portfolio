@@ -3,12 +3,18 @@ import './Header.scss';
 function Header() {
     return (
         <header className="header">
-            <nav>
-                <ul className='header__ul'>
-                    <li className='header__li'><a href="#section1">Home</a></li>
-                    <li className='header__li'><a href="#section2">About</a></li>
-                    <li className='header__li'><a href="#section3">Projects</a></li>
-                    <li className='header__li'><a href="#section4">Contact</a></li>
+            <div className="header__logo">
+                <img src="" alt="" />
+            </div>
+            <button className="nav-toggle" aria-label="toggle navigation">
+                <span className="hamburger"></span>
+            </button>
+            <nav className='header__nav'>
+                <ul className='header__list'>
+                    <li className='header__item'><a href="#home">Home</a></li>
+                    <li className='header__item'><a href="#about">About</a></li>
+                    <li className='header__item'><a href="#projects">Projects</a></li>
+                    <li className='header__item'><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </header>

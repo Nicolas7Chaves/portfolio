@@ -4,12 +4,12 @@
     justify-content: flex-end;
     padding-right: 1rem;
 
-    &__ul {
+    &__list {
         display: flex;
         list-style: none;
     }
 
-    &__li {
+    &__item {
         padding-left: 1rem;
     }
     a {

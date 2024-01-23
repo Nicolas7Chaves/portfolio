@@ -1,12 +1,15 @@
 import './App.scss';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './Components/Header/Header';
-import HomePage from './Pages/HomePage/HomePage';
+import MainPage from './Pages/MainPage/MainPage';
+import Footer from './Components/Footer/Footer';
+
 function App() {
   return (
     <div>
       <Header />
-      <HomePage />
+      <MainPage />
+      <Footer />
     </div>
   );
 }
