@@ -4,11 +4,11 @@ function Projects() {
 
     return (
         <section className="projects">
-            <h2 class="section__title section__title--projects">My Projects</h2>
-            <p class="section__subtitle"></p>
-            <div class="portfolio">
-                <a href="#" class="portfolio__item"> 1
-                    <img src="img/portfolio-01.jpg" alt="" class="portfolio__img" />
+            <h2 className="section__title section__title--projects">My Projects</h2>
+            <p className="section__subtitle"></p>
+            <div className="portfolio">
+                <a href="#" className="portfolio__item"> 1
+                    <img src="img/portfolio-01.jpg" alt="" className="portfolio__img" />
                 </a>
             </div>
         </section>

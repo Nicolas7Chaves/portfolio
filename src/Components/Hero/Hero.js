@@ -11,10 +11,10 @@ function Hero() {
             <section className="home" id="home">
                 <section className="hero" >
                     <img className="hero__portrait" src={Portrait} alt="portrait of Nicolas"></img>
-                    <h1 class="section__title section__title--hero">
+                    <h1 className="section__title section__title--hero">
                         Hey! I'm <strong className="section__title--name">Nicolas Chaves</strong>
                     </h1>
-                    <p class="section__subtitle section__subtitle--hero">FULL STACK DEV</p>
+                    <p className="section__subtitle section__subtitle--hero">FULL STACK DEV</p>
                 </section >
             </section>
 
