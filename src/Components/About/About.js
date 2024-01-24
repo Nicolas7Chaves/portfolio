@@ -10,7 +10,7 @@ function About() {
             <div className='about__layout'>
                 <h2 className="section__title section__title--about">Who I am</h2>
                 <TypeAnimation
-                    sequence={['Software Engineer', 600, 'Analyst', 600, 'Crossfitter', 600]}
+                    sequence={['Software Engineer', 600,'Project Manager', 600,'Analyst', 600, 'Crossfitter', 600]}
                     repeat={Infinity}
                     className="section__subtitle--about"
                 />
