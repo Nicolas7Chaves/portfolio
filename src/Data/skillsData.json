@@ -5,7 +5,31 @@
         "title": "HTML"
     },
     {
-        "img": "css.png",
+        "img": "css.svg",
         "title": "CSS"
+    },
+    {
+        "img": "react.svg",
+        "title": "React"
+    },
+    {
+        "img": "js.svg",
+        "title": "Javascript"
+    },
+    {
+        "img": "mysql.svg",
+        "title": "MySQL"
+    },
+    {
+        "img": "firebase.svg",
+        "title": "Firebase"
+    },
+    {
+        "img": "node.svg",
+        "title": "Node.js"
+    },
+    {
+        "img": "github.svg",
+        "title": "Github"
     }
 ]
