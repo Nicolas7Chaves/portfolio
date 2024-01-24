@@ -42,15 +42,14 @@
     flex-direction: column;
     font-size: 1.5rem;
     align-items: flex-start;
-    font-weight: 400;
-    // background-color: red;
+    font-weight: $fw-reg;
     color: black;
     margin-bottom: .5rem;
 }
 
 .section__title--name {
     font-size: 2rem;
-    font-weight: 800;
+    font-weight: $fw-bold;
     color: black;
 }
 
@@ -62,7 +61,7 @@
     flex-direction: column;
     align-items: flex-end;
     font-size: 1.5rem;
-    font-weight: 800;
+    font-weight: $fw-bold;
     border-radius: $border;
     background: $clr-background;
     box-shadow: 10px 10px 10px #949494,
@@ -141,7 +140,7 @@ strong {
         border-radius: $border;
         color: #444;
         font-size: 1rem;
-        font-weight: 700;
+        font-weight: $fw-bold;
         letter-spacing: .2rem;
         text-align: center;
         outline: none;

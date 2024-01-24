@@ -3,3 +3,41 @@
 @use '../../partials/globals' as *;
 @use '../../partials/variables' as *;
 
+.about {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    margin-top: 3rem;
+    gap: 1rem;
+
+    &__layout {
+        display: flex;
+        flex-direction: column;
+        width: 20rem;
+    }
+
+    &__img {
+        width: auto;
+        height: 350px;
+        border-radius: $border;
+        flex-shrink: 0;
+    }
+
+    &__body {
+        font-size: $fs-body;
+        font-weight: $fw-reg;
+    }
+}
+
+.section__title--about {
+    font-size: $fs-h2;
+    color: $clr-dark;
+}
+
+.section__subtitle--about {
+    font-size: $fs-h3;
+    color: $clr-dark;
+    background-color: $clr-accent;
+}
