@@ -30,6 +30,7 @@ function Hero() {
                         </div>
                     ))}
                 </div>
+                <button className="btn">SEE MY PROJECTS</button>
             </section>
         </>
     )
