@@ -4,7 +4,8 @@
 @use '../../partials/variables' as *;
 
 .education {
-    margin-top: 3rem;
+    margin-top: $sect-gap;
+    margin-bottom: $sect-gap;
     display: flex;
     flex-direction: column;
     align-items: center;

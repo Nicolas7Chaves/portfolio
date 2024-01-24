@@ -3,8 +3,8 @@ import "./Projects.scss"
 function Projects() {
 
     return (
-        <section>
-            <h2 class="section__title">My Projects</h2>
+        <section className="projects">
+            <h2 class="section__title section__title--projects">My Projects</h2>
             <p class="section__subtitle"></p>
             <div class="portfolio">
                 <a href="#" class="portfolio__item"> 1

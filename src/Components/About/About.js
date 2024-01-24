@@ -6,7 +6,7 @@ import { TypeAnimation } from 'react-type-animation';
 function About() {
 
     return (
-        <section className="about" id="about">
+        <section className="about">
             <div className='about__layout'>
                 <h2 className="section__title section__title--about">Who I am</h2>
                 <TypeAnimation

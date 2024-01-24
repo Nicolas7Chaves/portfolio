@@ -18,7 +18,7 @@ function Hero() {
                 </section >
             </section>
 
-            <section className="skills">
+            <section className="skills" id="about">
                 <h2 className="section__title section__title--skills">
                     Skills
                 </h2>

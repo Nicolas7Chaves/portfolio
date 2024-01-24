@@ -76,8 +76,8 @@ strong {
 .skills {
     background-color: $clr-dark;
     width: 100vw;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: $sect-gap;
+    padding-bottom: $sect-gap;
     display: flex;
     justify-content: center;
     flex-direction: column;

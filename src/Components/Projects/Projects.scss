@@ -3,3 +3,17 @@
 @use '../../partials/globals' as *;
 @use '../../partials/variables' as *;
 
+.projects {
+    background-color: $clr-dark;
+    width: 100vw;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section__title--projects {
+    color: $clr-accent;
+}
