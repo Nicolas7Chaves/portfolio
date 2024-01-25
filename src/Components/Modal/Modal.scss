@@ -17,7 +17,7 @@
     z-index: 100; 
     }
 .modal-content {
-    background: white;
+    background: $clr-background;
     padding: 20px;
     border-radius: 10px;
     width: 60%; 
@@ -27,23 +27,52 @@
     z-index: 101; 
     display: flex;
     flex-direction: column;
-    justify-content: space-between; // This ensures the button stays at the bottom
+    justify-content: space-between; 
 
     &__layout {
         display: flex;
         flex-direction: column;
-        align-items: flex-start; // Aligns content to the start (left) for left alignment
-        width: 100%; // Ensures the layout takes the full width of the modal content
+        align-items: flex-start;
+        width: 100%; 
     }
 
     &__text {
-        text-align: left; // Left aligns the text
-        width: 100%; // Ensures the text container takes the full width
+        text-align: left;
+        width: 100%; 
     }
 
     &__button {
-        align-self: center; // Centers the button horizontally
-        margin-top: 20px; // Adds some space above the button
-        width: fit-content; // Adjust the width of the button to fit its content
-    }
+        align-self: center; 
+        margin-top: 20px; 
+            padding: 1.5em 5em;
+            background: $clr-background;
+            border: none;
+            border-radius: $border;
+            color: #444;
+            font-size: 1rem;
+            font-weight: $fw-bold;
+            letter-spacing: .2rem;
+            text-align: center;
+            outline: none;
+            cursor: pointer;
+            transition: .2s ease-in-out;
+            color: $clr-accent;
+            box-shadow: 
+                8px 8px 16px  #bebebe,
+                -8px -8px 16px #ffffff;
+            
+        }
+        &__button:hover {
+            box-shadow: -2px -2px 6px #ffffff,
+                -2px -2px 4px #ffffff,
+                2px 2px 2px #bebebe,
+                2px 2px 4px #bebebe;
+        }
+    
+        &__button:active {
+            box-shadow: inset -2px -2px 6px #ffffff,
+                inset -2px -2px 4px #ffffff,
+                inset 2px 2px 2px #bebebe,
+                inset 2px 2px 4px #bebebe;
+        }
 }

@@ -37,11 +37,11 @@ function Education() {
                         <img src={require(`../../Assets/education/${item.logo}`)} alt={item.name} className="education__logo" />
                         <div className="education__name">{item.name}</div>
                         <Modal isOpen={openModalId === item.id} onClose={closeModal}>
-                            <h3>{item.name}</h3>
-                            <p>{item.details}</p>
+                            <h3 className='education__modal-name'>{item.name}</h3>
+                            <p className='education__modal-detail'>{item.details}</p>
                             <ul>
                                 {item.courses.map((course, index) => (
-                                    <li key={index}>{course.title}</li>
+                                    <li className='education__modal-item' key={index}>{course.title}</li>
                                 ))}
                             </ul>
                         </Modal>

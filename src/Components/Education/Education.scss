@@ -35,6 +35,18 @@
         text-align: center;
         margin-top: .5rem;
     }
+    &__modal-name {
+        font-size: $fs-h3;
+    }
+    &__modal-detail {
+        font-weight: 500;
+        margin-top: .5rem;
+    }
+    &__modal-item {
+        margin-top: .5rem;
+        list-style-type: none;
+        margin-left: 1rem;
+    }
 }
 
 .section__title--education {
@@ -45,39 +57,4 @@
     color: $clr-accent;
     font-size: $fs-h3;
     margin-top: 2rem;
-}
-
-.ceducation {
-    margin-top: $sect-gap;
-    margin-bottom: $sect-gap;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    &__item {
-        display: flex;
-        flex-direction: column; 
-        align-items: center; 
-        justify-content: center; 
-        text-align: center; 
-        width: 100%;
-    }
-
-    &__layout {
-        margin-top: 1rem;
-        display: flex;
-        gap: 1rem;
-    }
-
-    &__logo {
-        height: 75px;
-        width: auto;
-        display: flex;
-    }
-
-    &__name {
-        text-align: center;
-        margin-top: .5rem;
-        font-size: .95rem;
-    }
 }
