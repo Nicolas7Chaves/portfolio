@@ -13,7 +13,6 @@ function Projects() {
     return (
         <section className="projects" id="#projects">
             <h2 className="section__title section__title--projects">My Projects</h2>
-            {/* <p className="section__subtitle"></p> */}
             <div className="projects__layout">
                 <div className="projects__layout">
                     {projects.map(item => (

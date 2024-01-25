@@ -5,12 +5,14 @@ import educationData from "../../Data/education.json";
 import ceducationData from "../../Data/continuingEducation.json";
 
 function Education() {
-    const [openModalId, setOpenModalId] = useState(null);
+    const [openEducationModalId, setOpenEducationModalId] = useState(null);
+    const [openCEducationModalId, setOpenCEducationModalId] = useState(null);
     const [education, setEducation] = useState(educationData);
     const [ceducation, setCeducation] = useState(ceducationData);
     const closeModal = (e) => {
         e.stopPropagation();
-        setOpenModalId(null);
+        setOpenEducationModalId(null);
+        setOpenCEducationModalId(null);
     };
 
     return (
@@ -18,10 +20,10 @@ function Education() {
             <h2 className="section__title section__title--education">Education</h2>
             <div className="education__layout">
                 {education.map(item => (
-                    <div key={item.id} className="education__item" onClick={() => setOpenModalId(item.id)}>
+                    <div key={item.id} className="education__item" onClick={() => setOpenEducationModalId(item.id)}>
                         <img src={require(`../../Assets/education/${item.logo}`)} alt={item.name} className="education__logo" />
                         <div className="education__name">{item.name}</div>
-                        <Modal isOpen={openModalId === item.id} onClose={closeModal}>
+                        <Modal isOpen={openEducationModalId === item.id} onClose={closeModal}>
                             <h3 className='education__modal-name'>{item.name}</h3>
                             <p className='education__modal-detail'>{item.details}</p>
                             <ul>
@@ -39,10 +41,10 @@ function Education() {
             </div>
             <div className="education__layout">
                 {ceducation.map(item => (
-                    <div key={item.id} className="education__item" onClick={() => setOpenModalId(item.id)}>
+                    <div key={item.id} className="education__item" onClick={() => setOpenCEducationModalId(item.id)}>
                         <img src={require(`../../Assets/education/${item.logo}`)} alt={item.name} className="education__logo" />
                         <div className="education__name">{item.name}</div>
-                        <Modal isOpen={openModalId === item.id} onClose={closeModal}>
+                        <Modal isOpen={openCEducationModalId === item.id} onClose={closeModal}>
                             <h3 className='education__modal-name'>{item.name}</h3>
                             <p className='education__modal-detail'>{item.details}</p>
                             <ul>
