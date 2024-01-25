@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "logo": "scrimba.png",
+        "name": "Scrimba",
+        "details": "Full Stack Development Courses",
+        "courses": [
+            {
+                "title": "Learn Javascript",
+                "completed": 1
+            },
+            {
+                "title": "Learn React",
+                "completed": 0
+            },
+            {
+                "title": "Advanced React",
+                "completed": 0
+            },
+            {
+                "title": "Learn Firebase",
+                "completed": 0
+            }
+        ]
+    }
+]
