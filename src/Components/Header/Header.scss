@@ -13,6 +13,11 @@
     padding-right: 1rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3;
 
     &__list {
         display: flex;
@@ -22,6 +27,7 @@
     &__item {
         padding-left: 1rem;
     }
+
     a {
         color: $clr-light;
         font-weight: 500;
