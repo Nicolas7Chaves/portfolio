@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "logo": "paypatrol.png",
+        "name": "PayPatrol",
+        "details": "A time tracking and attendance management app that allows employees to clock in and out with a QR code reader and calculates weekly work hours and wages.",
+        "icons": [
+            {
+                "item": "github.svg",
+                "link": "https://github.com/Nicolas7Chaves/PayPatrol"
+            }
+        ]
+    }
+]
