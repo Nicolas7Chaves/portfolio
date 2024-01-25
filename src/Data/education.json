@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "logo": "osulogo.png",
+        "name": "Ohio State University",
+        "details": "Bachelors of Science in Business Administration",
+        "courses": [
+            {
+                "title": "Major in Finance"
+            },
+            {
+                "title": "Minor in Real Estate"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "logo": "brainstation.webp",
+        "name": "BrainStation",
+        "details": "Diploma",
+        "courses": [
+            {
+                "title": "Software Engineering Boot Camp"
+            }
+        ]
+    }
+]
