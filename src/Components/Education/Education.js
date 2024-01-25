@@ -15,7 +15,7 @@ function Education() {
             id: 1,
             logo: OSU,
             name: "Ohio State University",
-            details: "information about OSU..."
+            details: "information about OSU...information about OSU...information about OSU...information about OSU...information about OSU...information about OSU...information about OSU...information about OSU...information about OSU...information about OSU...information about OSU...information about OSU...information about OSU...information about OSU...information about OSU...information about OSU...information about OSU...information about OSU...information about OSU...information about OSU...information about OSU...information about OSU...information about OSU...information about OSU...information about OSU...information about OSU..."
         },
         
     ];
