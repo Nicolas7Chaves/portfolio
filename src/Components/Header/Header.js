@@ -6,9 +6,6 @@ function Header() {
             <div className="header__logo">
                 <img src="" alt="" />
             </div>
-            <button className="nav-toggle" aria-label="toggle navigation">
-                <span className="hamburger"></span>
-            </button>
             <nav className='header__nav'>
                 <ul className='header__list'>
                     <li className='header__item'><a href="/#home">Home</a></li>
