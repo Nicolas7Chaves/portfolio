@@ -3,7 +3,7 @@ import resumePDF from "../../Assets/resumeimg.png";
 
 function ResumePage() {
     return (
-        <div className="resume-page">
+        <div className="resume">
             
             <img className='resume__document' src={resumePDF}/>
         </div>
