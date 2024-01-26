@@ -6,6 +6,7 @@
     $fs-h2: 3.75rem;
     $fs-h3: 1.5rem;
     $fs-body: 1.125rem;
+
     @media screen and (min-width: $breakpoint-tablet) {
         @content;
     }
@@ -16,6 +17,7 @@
     $fs-h2: 3.75rem;
     $fs-h3: 1.5rem;
     $fs-body: 1.125rem;
+
     @media screen and (min-width: $breakpoint-desktop) {
         @content;
     }

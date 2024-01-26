@@ -10,5 +10,17 @@
                 "link": "https://github.com/Nicolas7Chaves/PayPatrol"
             }
         ]
+    },
+    {
+        "id": 2,
+        "logo": "paypatrol.png",
+        "name": "Portfolio",
+        "details": "Portfolio Website to display Software Engineering",
+        "icons": [
+            {
+                "item": "github.svg",
+                "link": "https://github.com/Nicolas7Chaves/portfolio"
+            }
+        ]
     }
 ]
