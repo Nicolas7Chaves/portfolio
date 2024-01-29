@@ -12,29 +12,35 @@
     background-color: $clr-nav-background;
     color: $clr-light;
     z-index: 5000;
+
+    &__nav {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: $clr-nav-background;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        z-index: 5000;
+        transition: transform 0.3s ease-in-out;
+        transform: translateX(-100%);
+    }
+
+    &__logo {
+        height: 40px;
+    }
 }
 
-.header__nav {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    display: flex; 
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: $clr-nav-background;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    z-index: 5000;
-    transition: transform 0.3s ease-in-out;
-    transform: translateX(-100%); 
-}
+
 
 .header__nav.active {
-    transform: translateX(0); 
+    transform: translateX(0);
 }
 
 .header__nav a {
@@ -52,7 +58,7 @@
     border: none;
     cursor: pointer;
     font-size: 1.8rem;
-    display: block; 
+    display: block;
 }
 
 .header__btn svg {
