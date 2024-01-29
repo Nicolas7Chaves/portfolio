@@ -4,32 +4,76 @@
 @use '../../partials/variables' as *;
 
 
-
-
 .header {
-    background-color: $clr-dark;
     display: flex;
-    justify-content: flex-end;
-    padding-right: 1rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    position: fixed; 
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0 2rem;
+    background-color: $clr-nav-background;
+    color: $clr-light;
+    z-index: 5000;
+}
+
+.header__nav {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: none; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $clr-nav-background;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 3;
+    height: 100vh;
+    z-index: 5000; 
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(-100%); 
+}
 
-    &__list {
-        display: flex;
-        list-style: none;
+.header__nav.active {
+    transform: translateX(0); 
+}
+
+.header__nav a {
+    color: $clr-light;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+.header__nav a:hover {
+    color: $clr-accent;
+}
+
+.header__item {
+    
+}
+
+.header__btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.8rem;
+    display: none; 
+}
+
+.header__close-btn {
+    
+}
+
+@media only screen and (max-width: 1024px) {
+    .header__btn {
+        display: block; 
     }
 
-    &__item {
-        padding-left: 1rem;
+    .header__nav {
+        display: flex; 
     }
+}
 
-    a {
-        color: $clr-light;
-        font-weight: 500;
-    }
+.header__btn svg {
+    fill: white;
 }

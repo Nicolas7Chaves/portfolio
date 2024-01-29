@@ -11,7 +11,7 @@ function Projects() {
         setOpenModalId(null);
     };
     return (
-        <section className="projects" id="#projects">
+        <section className="projects">
             <h2 className="section__title section__title--projects">My Projects</h2>
             <div className="projects__layout">
                 <div className="projects__layout">
