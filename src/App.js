@@ -8,13 +8,16 @@ import ResumePage from './Pages/Resume/ResumePage';
 function App() {
   return (
     <BrowserRouter>
-      <Header />
-      <Routes>
-        <Route path='/' element={<MainPage />}/>
-        <Route path='/resume' element={<ResumePage />}/>
-      </Routes>
-      
-      <Footer />
+      <div className="page-container">
+        <Header />
+        <main className="content-wrap">
+          <Routes>
+            <Route path='/' element={<MainPage />}/>
+            <Route path='/resume' element={<ResumePage />}/>
+          </Routes>
+        </main>
+        <Footer />
+      </div>
     </BrowserRouter>
   );
 }
