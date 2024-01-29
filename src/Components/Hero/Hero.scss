@@ -17,6 +17,14 @@
     height: 600px;
 
 }
+.home .particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Places the particles behind other content */
+}
 
 .hero {
     // Contains Hey Im Nicolas and Role

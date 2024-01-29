@@ -1,14 +1,36 @@
 import "./Hero.scss";
 import Portrait from "../../Assets/headshot.jpg";
 import skillsData from "../../Data/skillsData.json"
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import Particles, { initParticlesEngine } from "@tsparticles/react";
+import particlesOptions from "./particles.json";
+import { loadFull } from "tsparticles";
 
 function Hero() {
     const [skills, setSkills] = useState(skillsData);
+    const scrollToProjects = () => {
+        const projectsSection = document.getElementById('projects');
+        if (projectsSection) {
+            projectsSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+    const [init, setInit] = useState(false);
 
+    useEffect(() => {
+        if (init) {
+            return;
+        }
+
+        initParticlesEngine(async (engine) => {
+            await loadFull(engine);
+        }).then(() => {
+            setInit(true);
+        });
+    }, []);
     return (
         <>
             <section className="home" id="home">
+                {init && <Particles className="particles" options={particlesOptions} />}
                 <section className="hero" >
                     <img className="hero__portrait" src={Portrait} alt="portrait of Nicolas"></img>
                     <h1 className="section__title section__title--hero">
@@ -30,12 +52,10 @@ function Hero() {
                         </div>
                     ))}
                 </div>
-                <button className="btn">SEE MY PROJECTS</button>
+                <button onClick={scrollToProjects} className="btn">SEE MY PROJECTS</button>
             </section>
         </>
     )
 }
 
 export default Hero;
-//HTML, CSS, JavaScript, Node, React, Express, MySQL, Agile, DOM APIs,
-// Web APIs, User Authentication, OAuth, Heroku, GitHub, Jest,
