@@ -12,6 +12,8 @@
     background-color: $clr-nav-background;
     color: $clr-light;
     z-index: 5000;
+    position: sticky;
+    top: 0;
 
     &__nav {
         margin: 0;
@@ -37,8 +39,6 @@
     }
 }
 
-
-
 .header__nav.active {
     transform: translateX(0);
 }
@@ -51,6 +51,9 @@
 
 .header__nav a:hover {
     color: $clr-accent;
+}
+.header__btn:hover svg {
+    fill: $clr-accent;
 }
 
 .header__btn {
