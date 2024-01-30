@@ -21,7 +21,7 @@ function Projects() {
                             <div className="projects__name">{item.name}</div>
                             <Modal isOpen={openModalId === item.id} onClose={closeModal}>
                                 <h3 className='projects__modal-name'>{item.name}</h3>
-                                <img src={require(`../../Assets/projects/${item.logo}`)} alt={item.name} className="projects__logo--modal" />
+                                {/* <img src={require(`../../Assets/projects/${item.logo}`)} alt={item.name} className="projects__logo--modal" /> */}
                                 <p className='projects__modal-detail'>{item.details}</p>
                                 <ul className="projects__modal-items">
                                     {item.icons.map((icon, index) => (

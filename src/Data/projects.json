@@ -13,9 +13,9 @@
     },
     {
         "id": 2,
-        "logo": "paypatrol.png",
+        "logo": "portfolio.png",
         "name": "Portfolio",
-        "details": "Portfolio Website to display Software Engineering",
+        "details": "A showcase of my Software Engineering Portfolio, highlighting my technical skills and project accomplishments.",
         "icons": [
             {
                 "item": "github.svg",

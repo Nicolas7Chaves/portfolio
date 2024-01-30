@@ -31,14 +31,14 @@
         }
 
         &__logo {
-            height: auto;
-            width: 400px;
+            height: 300px;
+            width: auto;
             display: flex;
         }
 
         &__logo--modal{
             height: auto;
-            width: 400px;
+            width: 300px;
             display: flex;
         }
         &__name {
@@ -46,6 +46,7 @@
             margin-top: .5rem;
             color: $clr-light;
             font-size: $fs-h3;
+            font-weight: $fw-bold;
         }
 
         &__modal-name {
