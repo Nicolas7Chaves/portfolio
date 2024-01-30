@@ -11,6 +11,9 @@
     margin: auto;
     margin-top: $sect-gap;
     gap: 1rem;
+    @include tablet {
+        flex-direction: column;
+    }
 
     &__layout {
         display: flex;
