@@ -25,7 +25,7 @@ function Header() {
                 <a className="header__item" href="/#home" onClick={closeNavbar}>Home</a>
                 <a className="header__item" href="/#about" onClick={closeNavbar}>About</a>
                 <a className="header__item" href="/#projects" onClick={closeNavbar}>Projects</a>
-                <a className="header__item" href="/resume" onClick={closeNavbar}>Resume</a>
+                {/* <a className="header__item" href="/resume" onClick={closeNavbar}>Resume</a> */}
                 <button className='header__btn header__close-btn' onClick={showNavbar}>
                     <FaTimes />
                 </button>

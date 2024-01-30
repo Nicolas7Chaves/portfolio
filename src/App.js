@@ -13,7 +13,7 @@ function App() {
         <main className="content-wrap">
           <Routes>
             <Route path='/' element={<MainPage />}/>
-            <Route path='/resume' element={<ResumePage />}/>
+            {/* <Route path='/resume' element={<ResumePage />}/> */}
           </Routes>
         </main>
         <Footer />

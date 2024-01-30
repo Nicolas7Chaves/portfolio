@@ -1,26 +1,26 @@
-@use '../../partials/fonts' as *;
-@use '../../partials/mixins' as *;
-@use '../../partials/globals' as *;
-@use '../../partials/variables' as *;
+// @use '../../partials/fonts' as *;
+// @use '../../partials/mixins' as *;
+// @use '../../partials/globals' as *;
+// @use '../../partials/variables' as *;
 
-.resume {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    margin-top: 5rem;
-    margin-bottom: 3rem;
-    flex-direction: column;
-    align-items: flex-end;
-    min-width: 70%;
+// .resume {
+//     display: flex;
+//     align-content: center;
+//     justify-content: center;
+//     margin-top: 5rem;
+//     margin-bottom: 3rem;
+//     flex-direction: column;
+//     align-items: flex-end;
+//     min-width: 70%;
 
-    &__download {
-        width: 40px;
-        height: auto;
-        margin-right: 3rem;
-    }
-}
+//     &__download {
+//         width: 40px;
+//         height: auto;
+//         margin-right: 3rem;
+//     }
+// }
 
-.resume-layout {
-    display: flex;
-    justify-content: center;
-}
+// .resume-layout {
+//     display: flex;
+//     justify-content: center;
+// }
