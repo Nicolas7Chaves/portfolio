@@ -1,6 +1,6 @@
 import '../../Pages/MainPage/MainPage.scss';
 import "./About.scss";
-import aboutMe from "../../Assets/demoday.jpeg";
+import aboutMe from "../../Assets/demoday.jpg";
 import { TypeAnimation } from 'react-type-animation';
 
 function About() {
