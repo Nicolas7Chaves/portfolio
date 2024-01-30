@@ -71,10 +71,6 @@
     font-size: 2rem;
     font-weight: $fw-bold;
     color: black;
-    margin-right: 1rem;
-    @include tablet {
-        margin-right: .5rem;
-    }
 }
 
 .section__subtitle--hero {
