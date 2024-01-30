@@ -42,4 +42,7 @@
 .section__subtitle--about {
     font-size: 2rem;
     color: $clr-dark;
+    @include phone {
+        font-size: 1.5rem;
+    }
 }
