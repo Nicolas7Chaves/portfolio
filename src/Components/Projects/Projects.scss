@@ -20,7 +20,7 @@
             align-items: center;
             justify-content: center;
             text-align: center;
-            width: 100%;
+            // width: 100%;
             cursor: pointer;
         }
 
@@ -31,7 +31,8 @@
         }
 
         &__logo {
-            height: 300px;
+            height: 70%;
+            max-height: 300px;
             width: auto;
             display: flex;
         }

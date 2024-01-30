@@ -1,24 +1,18 @@
 @use 'variables' as *;
 
-
+@mixin desktop {
+    @media screen and (min-width: $breakpoint-desktop) {
+        @content;
+    }
+}
 @mixin tablet {
-    $fs-h1: 4.5rem;
-    $fs-h2: 3.75rem;
-    $fs-h3: 1.5rem;
-    $fs-body: 1.125rem;
-
-    @media screen and (min-width: $breakpoint-tablet) {
+    @media screen and (max-width: $breakpoint-tablet) {
         @content;
     }
 }
 
-@mixin desktop {
-    $fs-h1: 4.5rem;
-    $fs-h2: 3.75rem;
-    $fs-h3: 1.5rem;
-    $fs-body: 1.125rem;
-
-    @media screen and (min-width: $breakpoint-desktop) {
+@mixin phone {
+    @media screen and (max-width: $breakpoint-phone) {
         @content;
     }
 }
