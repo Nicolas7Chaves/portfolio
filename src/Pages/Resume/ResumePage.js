@@ -1,6 +1,5 @@
 import { useState, useRef, useEffect } from 'react';
 import { Document, Page, pdfjs } from 'react-pdf';
-import resumePDF from '../../Assets/ncResume.pdf';
 //Do not remove the imports below they disable the annotation layer and text layer.
 import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
 import 'react-pdf/dist/esm/Page/TextLayer.css';
@@ -25,10 +24,12 @@ function ResumePage() {
         return () => window.removeEventListener('resize', handleResize);
     }, []);
 
+    const resumePDF = process.env.PUBLIC_URL + '/ncResume.pdf';
+
     return (
         <div className='resume-layout'>
             <div className="resume" ref={containerRef}>
-                <a href={resumePDF} download className="download-button"><img className='resume__download' src={download} /></a>
+                <a href={resumePDF} download className="download-button"><img className='resume__download' src={download} alt="Download" /></a>
                 <Document file={resumePDF}>
                     <Page pageNumber={pageNumber} width={pageWidth} />
                 </Document>
