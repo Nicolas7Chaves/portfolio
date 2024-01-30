@@ -6,13 +6,17 @@
 .projects {
     background-color: $clr-dark;
     width: 100vw;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding: 2rem 1rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     border: none;
+
+    @include phone {
+        padding-left: .75rem;
+        padding-right: .75rem;
+    }
 
     &__item {
         display: flex;
@@ -24,10 +28,11 @@
         max-width: 500px;
         flex: 0 1 calc(33% - 1rem);
         margin-top: 1rem;
-        
+
         @include tablet {
             flex: 0 1 calc(50% - 1rem);
         }
+
         @include phone {
             flex: 0 1 100%;
         }
@@ -47,6 +52,7 @@
 
 
         @include tablet {
+            display: flex;
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: center;
@@ -54,52 +60,51 @@
         }
     }
 
-        &__name {
-            text-align: center;
-            margin-top: .5rem;
-            color: $clr-light;
-            font-size: $fs-h3;
-            font-weight: $fw-bold;
-        }
-
-        &__modal-name {
-            font-size: $fs-h3;
-            color: $clr-accent;
-            margin-bottom: .5rem;
-        }
-
-        &__modal-detail {
-            margin-top: .5rem;
-            margin-left: 1rem;
-        }
-
-        &__modal-items {
-            display: flex;
-            justify-content: center;
-            margin-top: 1rem;
-        }
-
-        &__modal-item {
-            list-style-type: none;
-            width: 30px;
-            height: 30px;
-            fill: blue;
-        }
-
-        &__modal-progress {
-            width: 18px;
-            height: 18px;
-            margin-left: .5rem;
-        }
+    &__name {
+        text-align: center;
+        margin-top: .5rem;
+        color: $clr-light;
+        font-size: $fs-h3;
+        font-weight: $fw-bold;
     }
 
-    .section__title--education {
+    &__modal-name {
+        font-size: $fs-h3;
         color: $clr-accent;
-        font-size: $fs-h2;
+        margin-bottom: .5rem;
     }
 
-
-    .section__title--projects {
-        color: $clr-accent;
+    &__modal-detail {
+        margin-top: .5rem;
+        margin-left: 1rem;
     }
 
+    &__modal-items {
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+
+    &__modal-item {
+        list-style-type: none;
+        width: 30px;
+        height: 30px;
+        fill: blue;
+    }
+
+    &__modal-progress {
+        width: 18px;
+        height: 18px;
+        margin-left: .5rem;
+    }
+}
+
+.section__title--education {
+    color: $clr-accent;
+    font-size: $fs-h2;
+}
+
+
+.section__title--projects {
+    color: $clr-accent;
+}
