@@ -58,21 +58,21 @@
             transition: .2s ease-in-out;
             color: $clr-accent;
             box-shadow: 
-                8px 8px 16px  #bebebe,
-                -8px -8px 16px #ffffff;
+                8px 8px 16px  #383838,
+                -8px -8px 16px #4c4c4c;
             
         }
         &__button:hover {
-            box-shadow: -2px -2px 6px #ffffff,
-                -2px -2px 4px #ffffff,
-                2px 2px 2px #bebebe,
-                2px 2px 4px #bebebe;
+            box-shadow: -2px -2px 6px #4c4c4c,
+                -2px -2px 4px #4c4c4c,
+                2px 2px 2px #383838,
+                2px 2px 4px #383838;
         }
     
         &__button:active {
-            box-shadow: inset -2px -2px 6px #ffffff,
-                inset -2px -2px 4px #ffffff,
-                inset 2px 2px 2px #bebebe,
-                inset 2px 2px 4px #bebebe;
+            box-shadow: inset -2px -2px 6px #4c4c4c,
+                inset -2px -2px 4px #4c4c4c,
+                inset 2px 2px 2px #383838,
+                inset 2px 2px 4px #383838;
         }
 }

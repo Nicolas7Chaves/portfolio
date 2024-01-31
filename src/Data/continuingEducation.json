@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "logo": "scrimba.png",
+        "logo": "scrimba.svg",
         "name": "Scrimba",
         "details": "Full Stack Development Courses",
         "courses": [

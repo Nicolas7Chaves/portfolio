@@ -45,11 +45,13 @@
         z-index: 2;
         position: absolute;
         transform: translate(-170%, -15%);
+        object-fit: cover;
 
         @include tablet {
             transform: translate(-220%, 0); 
             width: 8rem; 
             height: 8rem;
+            object-fit: cover;
         }
         @include phone {
             display: none;
@@ -63,7 +65,7 @@
     font-size: 1.5rem;
     align-items: flex-start;
     font-weight: $fw-reg;
-    color: black;
+    color: $clr-light;
     margin-bottom: .5rem;
     margin-right: .5rem;
 }
@@ -71,7 +73,7 @@
 .section__title--name {
     font-size: 2rem;
     font-weight: $fw-bold;
-    color: black;
+    color: $clr-light;
 }
 
 .section__subtitle--hero {
@@ -179,8 +181,8 @@ strong {
     transition: .2s ease-in-out;
     color: $clr-accent;
     box-shadow:
-        10px 10px 20px #202020,
-        -10px -10px 20px #404040;
+        10px 10px 20px #383838,
+        -10px -10px 20px #4c4c4c;
     @include tablet {
         padding: 1em 4em;
     }
@@ -190,15 +192,15 @@ strong {
 }
 
 .btn:hover {
-    box-shadow: -2px -2px 6px #404040,
-        -2px -2px 4px #404040,
-        2px 2px 2px #202020,
-        2px 2px 4px #202020;
+    box-shadow: -2px -2px 6px #4c4c4c,
+        -2px -2px 4px #4c4c4c,
+        2px 2px 2px #383838,
+        2px 2px 4px #383838;
 }
 
 .btn:active {
-    box-shadow: inset -2px -2px 6px #404040,
-        inset -2px -2px 4px #404040,
-        inset 2px 2px 2px #202020,
-        inset 2px 2px 4px #202020;
+    box-shadow: inset -2px -2px 6px #4c4c4c,
+        inset -2px -2px 4px #4c4c4c,
+        inset 2px 2px 2px #383838,
+        inset 2px 2px 4px #383838;
 }
