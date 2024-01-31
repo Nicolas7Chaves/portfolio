@@ -52,7 +52,7 @@ function Education() {
                                     <li className='education__modal-item' key={index}>
                                         {course.title}
                                         <img className="education__modal-progress"
-                                            src={require(`../../Assets/education/${course.completed ? 'completed.png' : 'wip.png'}`)}
+                                            src={require(`../../Assets/education/${course.completed ? 'completed.png' : 'whiteWIP.png'}`)}
                                             alt={course.completed ? 'Completed' : 'WIP'}
                                         />
                                     </li>
