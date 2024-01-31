@@ -1,5 +1,5 @@
 import "./Hero.scss";
-import Portrait from "../../Assets/headshot.jpg";
+import Portrait from "../../Assets/bwheadshot.jpg";
 import skillsData from "../../Data/skillsData.json"
 import { useState, useEffect } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
