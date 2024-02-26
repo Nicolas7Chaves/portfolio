@@ -17,6 +17,10 @@
         "title": "Javascript"
     },
     {
+        "img": "python.svg",
+        "title": "Python"
+    },
+    {
         "img": "mysql.svg",
         "title": "MySQL"
     },
