@@ -22,5 +22,17 @@
                 "link": "https://github.com/Nicolas7Chaves/portfolio"
             }
         ]
+    },
+    {
+        "id": 3,
+        "logo": "aiTranslate.png",
+        "name": "AITranslate",
+        "details": "AiTranslate offers seamless translation for Spanish, English, French, and German. Users select their language, input text, and receive accurate translations with a click. Utilizing the OpenAI API, translations appear instantly below the input, ensuring a smooth user experience.",
+        "icons": [
+            {
+                "item": "github.svg",
+                "link": "https://github.com/Nicolas7Chaves/AiTranslate"
+            }
+        ]
     }
 ]
