@@ -30,5 +30,61 @@
                 "completed": 0
             }
         ]
+    },
+    {
+        "id": 2,
+        "logo": "neetcode.png",
+        "name": "NeetCode",
+        "details": "Data Structure & Algorithms",
+        "courses": [
+            {
+                "title": "Arrays",
+                "completed": 1
+            },
+            {
+                "title": "Linked Lists",
+                "completed": 0
+            },
+            {
+                "title": "Recursion",
+                "completed": 0
+            },
+            {
+                "title": "Sorting",
+                "completed": 0
+            },
+            {
+                "title": "Binary Search",
+                "completed": 0
+            },
+            {
+                "title": "Trees",
+                "completed": 0
+            },
+            {
+                "title": "BackTracking",
+                "completed": 0
+            },
+            {
+                "title": "Heap/Priority Queue",
+                "completed": 0
+            },
+            {
+                "title": "Hashing",
+                "completed": 0
+            },
+            {
+                "title": "Graphs",
+                "completed": 0
+            },
+            {
+                "title": "Dynamic Programming",
+                "completed": 0
+            },
+            {
+                "title": "Bit Manipulation",
+                "completed": 0
+            }
+        ]
     }
 ]
