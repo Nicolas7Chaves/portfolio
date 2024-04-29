@@ -41,7 +41,7 @@
     &__logo {
         width: 450px;
         height: 300px;
-        object-fit: scale-down;
+        object-fit: cover;
         @include tablet {
             width: 350px;
             height: 200px;
@@ -91,19 +91,25 @@
         display: flex;
         justify-content: center;
         margin-top: 1rem;
+        gap: 1rem;
     }
 
     &__modal-item {
         list-style-type: none;
         width: 50px;
         height: 50px;
+        
     }
 
     &__modal-item:hover {
-        box-shadow: 5px 5px 40px #383838,
-            -5px -5px 40px #4c4c4c;
+        transition: all .2s ease-in-out;
+        transform: scale(1.25);
     }
-
+    &__modal-item--icon {
+        width: 50px;
+        height: 50px;
+        
+    }
     &__modal-progress {
         width: 18px;
         height: 18px;

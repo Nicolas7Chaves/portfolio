@@ -1,15 +1,31 @@
 [
     {
-        "id": 1,
-        "logo": "paypatrol.png",
-        "name": "PayPatrol",
-        "details": "A time tracking and attendance management app that allows employees to clock in and out with a QR code reader and calculates weekly work hours and wages.",
+        "id": 4,
+        "logo": "postr.png",
+        "name": "Postr",
+        "details": "Postr is a social media platform that allows users to share their thoughts with friends and family. Users can create an account, post content, and interact with other users. Postr was built using React, and Firebase.",
         "icons": [
             {
                 "item": "github.svg",
-                "link": "https://github.com/Nicolas7Chaves/nicolas-chaves-capstone"
+                "link": "https://github.com/Nicolas7Chaves/AiTranslate"
+            },
+            {
+                "item": "internet.svg",
+                "link": "https://nicolaschaves-postr.netlify.app/"
             }
-        ]
+        ] 
+    },
+    {
+        "id": 3,
+        "logo": "aiTranslate.png",
+        "name": "AITranslate",
+        "details": "AiTranslate offers seamless translation for Spanish, English, French, and German. Users select their language, input text, and receive accurate translations with a click. Utilizing the OpenAI API, translations appear instantly below the input, ensuring a smooth user experience.",
+        "icons": [
+            {
+                "item": "github.svg",
+                "link": "https://github.com/Nicolas7Chaves/AiTranslate"
+            }
+        ] 
     },
     {
         "id": 2,
@@ -24,15 +40,15 @@
         ]
     },
     {
-        "id": 3,
-        "logo": "aiTranslate.png",
-        "name": "AITranslate",
-        "details": "AiTranslate offers seamless translation for Spanish, English, French, and German. Users select their language, input text, and receive accurate translations with a click. Utilizing the OpenAI API, translations appear instantly below the input, ensuring a smooth user experience.",
+        "id": 1,
+        "logo": "paypatrol.png",
+        "name": "PayPatrol",
+        "details": "A time tracking and attendance management app that allows employees to clock in and out with a QR code reader and calculates weekly work hours and wages.",
         "icons": [
             {
                 "item": "github.svg",
-                "link": "https://github.com/Nicolas7Chaves/AiTranslate"
+                "link": "https://github.com/Nicolas7Chaves/nicolas-chaves-capstone"
             }
-        ] 
+        ]
     }
 ]

@@ -26,7 +26,7 @@ function Projects() {
                                     {item.icons.map((icon, index) => (
                                         <li key={index} className='projects__modal-item'>
                                             <a href={icon.link} target="_blank" rel="noopener noreferrer">
-                                                <img src={require(`../../Assets/projects/${icon.item}`)} alt="Icon" />
+                                                <img className="projects__modal-item--icon" src={require(`../../Assets/projects/${icon.item}`)} alt="Icon" />
                                             </a>
                                         </li>
                                     ))}

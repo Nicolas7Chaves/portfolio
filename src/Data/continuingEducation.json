@@ -19,7 +19,7 @@
             },
             {
                 "title": "The AI Engineer Path",
-                "completed": 0
+                "completed": 1
             },
             {
                 "title": "Advanced React",
@@ -27,7 +27,7 @@
             },
             {
                 "title": "Learn Firebase",
-                "completed": 0
+                "completed": 1
             }
         ]
     },
