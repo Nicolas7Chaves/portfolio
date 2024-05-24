@@ -36,7 +36,7 @@ function Hero() {
                     <h1 className="section__title section__title--hero">
                         Hey! I'm <strong className="section__title--name">Nicolas Chaves</strong>
                     </h1>
-                    <p className="section__subtitle section__subtitle--hero">FULL STACK DEV</p>
+                    <p className="section__subtitle section__subtitle--hero">PRODUCT MANAGER</p>
                 </section >
             </section>
 
