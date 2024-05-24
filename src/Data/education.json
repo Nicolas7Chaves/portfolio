@@ -21,6 +21,9 @@
         "courses": [
             {
                 "title": "Software Engineering Boot Camp"
+            },
+            {
+                "title": "Product Manager Course"
             }
         ]
     }
