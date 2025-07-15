@@ -36,10 +36,10 @@ function Education() {
                 ))}
             </div>
 
-            <div>
+            {/* <div>
                 <h2 className="section__title section__title--Ceducation">Continuing Education</h2>
-            </div>
-            <div className="education__layout">
+            </div> */}
+            {/* <div className="education__layout">
                 {ceducation.map(item => (
                     <div key={item.id} className="education__item" onClick={() => setOpenCEducationModalId(item.id)}>
                         <img src={require(`../../Assets/education/${item.logo}`)} alt={item.name} className="education__logo" />
@@ -61,7 +61,7 @@ function Education() {
                         </Modal>
                     </div>
                 ))}
-            </div>
+            </div> */}
         </section>
     );
 }
