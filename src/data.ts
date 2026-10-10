@@ -104,6 +104,7 @@ export const issues: Issue[] = [
     photos: [
       { src: '/images/demoday.jpg', caption: 'demo day!' },
       { src: '/images/demo.jpg', caption: 'the PayPatrol booth' },
+      { src: '/images/hackathon.jpg', caption: 'Kaseya × BrainStation hackathon', wide: true },
     ],
     roles: [
       {
