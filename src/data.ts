@@ -37,6 +37,8 @@ export type Issue = {
   color: string
   ink: string
   image?: string
+  // Show the photo as-is instead of blending it into the cover color (needed on dark covers).
+  plainImage?: boolean
   current?: boolean
   roles: Role[]
 }
@@ -139,6 +141,8 @@ export const issues: Issue[] = [
     tagline: 'Learned the pipeline from the front line, then automated it.',
     color: '#1b1a17',
     ink: '#efe9dd',
+    image: '/images/wellhub-headshot.jpg',
+    plainImage: true,
     roles: [
       {
         title: 'Enterprise Business Development Representative',
@@ -257,11 +261,11 @@ export const classifieds = [
 ]
 
 // Scrapbook photos in /public/images. Entries without `src` show as empty slots.
-export type Photo = { src?: string; caption: string }
+export type Photo = { src?: string; caption: string; wide?: boolean }
 
 export const photos: Photo[] = [
   { src: '/images/demoday.jpg', caption: 'demo day!' },
   { src: '/images/demo.jpg', caption: 'the PayPatrol booth' },
-  { caption: "Sculpt '26" },
+  { src: '/images/sculpt.jpg', caption: "Sculpt, Clay's GTM conference", wide: true },
   { caption: 'on the golf course' },
 ]

@@ -33,9 +33,15 @@ function IssueCover({ issue, active, wide, onSelect }: { issue: Issue; active: b
       style={{ backgroundColor: issue.color, color: issue.ink }}
       className="relative flex aspect-[3/4] w-40 shrink-0 cursor-pointer flex-col overflow-hidden rounded-[3px] p-3 text-left shadow-[-16px_20px_36px_-10px_rgba(27,26,23,0.45)] md:-mx-8 md:w-52 md:p-4"
     >
-      {issue.image && (
-        <img src={issue.image} alt="" className="absolute inset-0 h-full w-full object-cover opacity-50 mix-blend-multiply" />
-      )}
+      {issue.image &&
+        (issue.plainImage ? (
+          <>
+            <img src={issue.image} alt="" className="absolute inset-0 h-full w-full object-cover object-top opacity-80" />
+            <span className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(27,26,23,0.55),transparent_35%,transparent_55%,rgba(27,26,23,0.9))]" />
+          </>
+        ) : (
+          <img src={issue.image} alt="" className="absolute inset-0 h-full w-full object-cover opacity-50 mix-blend-multiply" />
+        ))}
       <span className="kicker relative flex justify-between text-[9px]">
         <span>No. {issue.number}</span>
         <span>{issue.year}</span>
