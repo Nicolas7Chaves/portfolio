@@ -6,10 +6,11 @@ import Reveal, { SectionHeading } from './Reveal'
 const tapeColors = ['rgba(255,216,77,0.8)', 'rgba(47,91,211,0.45)', 'rgba(194,65,12,0.45)']
 
 // The chapter's photos, dropped onto the page like taped polaroids in one
-// horizontal row (scrolls sideways on small screens).
+// horizontal row. Phones scroll it sideways; a scroll box clips shadows, so it
+// gets extra bottom padding there, and wider screens skip scrolling entirely.
 function Polaroids({ photos }: { photos: Photo[] }) {
   return (
-    <div className="-mx-4 flex gap-6 overflow-x-auto px-4 pt-5 pb-8 sm:mx-0 sm:px-1 md:gap-8">
+    <div className="-mx-4 flex gap-6 overflow-x-auto px-4 pt-5 pb-14 md:mx-0 md:flex-wrap md:gap-8 md:overflow-visible md:px-0 md:pb-6">
       {photos.map((photo, i) => {
         const rotate = i % 2 === 0 ? -3 : 2.5
         return (
