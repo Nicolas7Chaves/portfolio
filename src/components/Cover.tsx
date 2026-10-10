@@ -117,7 +117,7 @@ export default function Cover() {
         >
           <span className="float-left mr-2 font-serif text-[4.2rem] leading-[0.8] text-rust">I</span>
           build AI-powered systems that turn buying signals into pipeline. Before that I was a founder, a real estate
-          developer, a software engineer, a product manager and a BDR. This is the whole story.
+          development analyst, a software engineer, a product manager and a BDR. This is the whole story.
         </motion.p>
 
         <motion.div
