@@ -178,7 +178,7 @@ export const issues: Issue[] = [
     tagline: 'Where sales, data and code meet. The current issue.',
     color: '#ffd84d',
     ink: '#1b1a17',
-    image: '/images/demoday.jpg',
+    image: '/images/sculpt.jpg',
     photos: [{ src: '/images/sculpt.jpg', caption: "Sculpt, Clay's GTM conference", wide: true }],
     current: true,
     roles: [

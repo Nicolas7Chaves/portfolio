@@ -40,9 +40,9 @@ function Magazine() {
         className="relative block aspect-[3/4] overflow-hidden rounded-[3px] bg-ink text-white shadow-[0_40px_80px_-20px_rgba(27,26,23,0.55),0_8px_20px_-8px_rgba(27,26,23,0.4)]"
       >
         <img
-          src="/images/demoday.jpg"
-          alt="Nicolas Chaves at BrainStation demo day"
-          className="absolute inset-0 h-full w-full object-cover object-[60%_30%]"
+          src="/images/cover.jpg"
+          alt="Nicolas Chaves sitting in an armchair in front of colorful paintings"
+          className="absolute inset-0 h-full w-full object-cover object-[50%_40%]"
         />
         <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(0,0,0,0.05)_40%,rgba(0,0,0,0.75))]" />
 
