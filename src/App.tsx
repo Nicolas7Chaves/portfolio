@@ -1,12 +1,12 @@
 import { useEffect } from 'react'
 import Lenis from 'lenis'
 import Nav from './components/Nav'
-import Hero from './components/Hero'
-import Speedrun from './components/Speedrun'
-import Toolkit from './components/Toolkit'
-import Projects from './components/Projects'
-import Gallery from './components/Gallery'
-import Contact from './components/Contact'
+import Cover from './components/Cover'
+import Issues from './components/Issues'
+import Shipped from './components/Shipped'
+import Classifieds from './components/Classifieds'
+import Snapshots from './components/Snapshots'
+import BackCover from './components/BackCover'
 
 export default function App() {
   // Smooth, inertial scrolling (skipped for people who prefer reduced motion).
@@ -20,13 +20,13 @@ export default function App() {
     <>
       <Nav />
       <main>
-        <Hero />
-        <Speedrun />
-        <Toolkit />
-        <Projects />
-        <Gallery />
+        <Cover />
+        <Issues />
+        <Shipped />
+        <Classifieds />
+        <Snapshots />
       </main>
-      <Contact />
+      <BackCover />
     </>
   )
 }
