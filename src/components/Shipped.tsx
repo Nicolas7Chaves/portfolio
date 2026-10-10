@@ -16,16 +16,17 @@ function Feature({ project, index }: { project: Project; index: number }) {
         <div className={`overflow-hidden rounded-[3px] shadow-[0_30px_60px_-25px_rgba(27,26,23,0.5)] ${flip ? 'rotate-1' : '-rotate-1'}`}>
           {project.image ? (
             <img src={project.image} alt={`${project.name} screenshot`} loading="lazy" className="aspect-[4/3] w-full object-cover object-top" />
-          ) : (
-            <div className="grid aspect-[4/3] place-items-center bg-sun p-8 text-center">
-              <p className="font-serif text-[clamp(3rem,8vw,6rem)] leading-[0.85]">
-                1st
-                <br />
-                <i>place</i>
-              </p>
-              <p className="kicker">BrainStation × Kaseya · 24h hackathon</p>
+          ) : project.poster ? (
+            <div
+              className={`flex aspect-[4/3] flex-col items-center justify-center p-8 text-center ${
+                project.poster.color === '#ffd84d' ? 'text-ink' : 'text-paper'
+              }`}
+              style={{ backgroundColor: project.poster.color }}
+            >
+              <p className="font-serif text-[clamp(5rem,14vw,10rem)] leading-[0.85]">{project.poster.big}</p>
+              <p className="kicker mt-4">{project.poster.small}</p>
             </div>
-          )}
+          ) : null}
         </div>
       </motion.div>
 

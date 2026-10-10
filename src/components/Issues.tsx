@@ -110,6 +110,16 @@ export default function Issues() {
                     <p className="kicker text-faded">{role.dates}</p>
                   </div>
                   {role.details && <p className="mt-2 max-w-2xl leading-relaxed text-ink/80">{role.details}</p>}
+                  {role.highlights && (
+                    <ul className="mt-3 max-w-2xl space-y-2">
+                      {role.highlights.map((point) => (
+                        <li key={point} className="flex gap-3 leading-relaxed text-ink/80">
+                          <span className="mt-[0.6em] h-1.5 w-1.5 shrink-0 rounded-full bg-rust" />
+                          {point}
+                        </li>
+                      ))}
+                    </ul>
+                  )}
                 </li>
               ))}
             </ul>

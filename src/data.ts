@@ -15,7 +15,7 @@ export const profile = {
 // "In this issue" table of contents on the cover page.
 export const contents = [
   { page: '04', title: 'Back issues', note: 'Six careers, one story', href: '#issues' },
-  { page: '12', title: 'Things I shipped', note: 'Apps, hacks and a hackathon win', href: '#shipped' },
+  { page: '12', title: 'Things I shipped', note: 'AI workflows, apps and a hackathon win', href: '#shipped' },
   { page: '20', title: 'Classifieds', note: 'Skills for hire', href: '#classifieds' },
   { page: '26', title: 'Snapshots', note: 'Field notes and photos', href: '#snapshots' },
 ]
@@ -25,6 +25,7 @@ export type Role = {
   company: string
   dates: string
   details?: string
+  highlights?: string[]
 }
 
 export type Issue = {
@@ -114,8 +115,12 @@ export const issues: Issue[] = [
         title: 'Technical Product Manager',
         company: 'Stealth FinTech Startup',
         dates: 'Jul 2024 – Jan 2025',
-        details:
-          'Aligned four teams on product goals, standardized datasets for ML model accuracy, wrote PRDs and wireframes, and built a bug-tracking system that shortened resolution cycles.',
+        highlights: [
+          'Coordinated platform, data science, QA and data annotation teams to hit critical deadlines, and launched daily stand-ups that kept everyone aligned.',
+          'Boosted data pipeline efficiency by 50% by refining data acquisition and standardizing input quality with the annotation team.',
+          'Wrote PRDs and visual mockups that turned user needs into clear specs and cut scope misalignment within the first month.',
+          'Revamped Jira workflows, cutting sprint planning time by 15% and speeding up team velocity.',
+        ],
       },
       {
         title: 'Product Manager',
@@ -131,15 +136,20 @@ export const issues: Issue[] = [
     year: '2025',
     title: 'Sales',
     years: '2025 – 2026',
-    tagline: 'Learned the pipeline from the front line.',
+    tagline: 'Learned the pipeline from the front line, then automated it.',
     color: '#1b1a17',
     ink: '#efe9dd',
     roles: [
       {
-        title: 'Business Development Representative',
+        title: 'Enterprise Business Development Representative',
         company: 'Wellhub',
         dates: 'Aug 2025 – Jul 2026',
-        details: 'Prospected into enterprise accounts and opened conversations for the sales team.',
+        highlights: [
+          'Managed a book of 600+ enterprise accounts across the US and Canada, hitting 116% of pipeline quota in Q2 2026 and ranking above the team average.',
+          'Built an AI-powered prospecting workflow with Claude Code and the ZoomInfo MCP that pulls intent signals and news triggers to prioritize accounts, with no manual research.',
+          'Engineered the messaging layer behind it: prompt frameworks and research templates that produce personalized, ready-to-send emails at scale, reaching ~51% opens and ~4% replies, the best cadence on the team.',
+          'Delivered ranked account intelligence reports to each AE, scoring high-intent accounts so they could act on buying signals immediately.',
+        ],
       },
     ],
   },
@@ -159,7 +169,7 @@ export const issues: Issue[] = [
         company: 'Wellhub',
         dates: 'Jul 2026 – Present',
         details:
-          'Building the data and automation layer behind enterprise go-to-market: enrichment, routing and outbound workflows in Clay and HubSpot.',
+          'Turned the AI prospecting workflow I built as a BDR into a full-time job: building the systems behind enterprise go-to-market.',
       },
     ],
   },
@@ -171,10 +181,21 @@ export type Project = {
   blurb: string
   stack: string[]
   image?: string
+  // Shown instead of an image: a big typographic "poster".
+  poster?: { big: string; small: string; color: string }
   links: { label: string; href: string }[]
 }
 
 export const projects: Project[] = [
+  {
+    name: 'AI Prospecting Engine',
+    kicker: 'Built at Wellhub',
+    blurb:
+      'A Claude Code workflow wired into the ZoomInfo MCP. It reads intent signals and news triggers across 600+ enterprise accounts, ranks who to call, and drafts personalized emails that are ready to send. It became the best-performing cadence on the team.',
+    stack: ['Claude Code', 'ZoomInfo MCP', 'Prompt frameworks', 'Account scoring'],
+    poster: { big: '51%', small: 'open rate · ~4% reply rate', color: '#2f5bd3' },
+    links: [],
+  },
   {
     name: 'PayPatrol',
     kicker: 'Capstone',
@@ -190,6 +211,7 @@ export const projects: Project[] = [
     blurb:
       'Built in 24 hours for Kaseya: an OpenAI-powered dashboard that monitors developer activity and grades commit comment quality across repos.',
     stack: ['React', 'GitHub API', 'OpenAI API', 'SCSS'],
+    poster: { big: '1st', small: 'BrainStation × Kaseya · 24h hackathon', color: '#ffd84d' },
     links: [],
   },
   {
@@ -214,13 +236,13 @@ export const projects: Project[] = [
 export const classifieds = [
   {
     heading: 'Go-to-market',
-    ad: 'Operator seeks messy CRM. Will enrich, route and automate until pipeline flows.',
-    items: ['Clay', 'HubSpot Sales Hub', 'LinkedIn Sales Navigator', 'Enrichment', 'Outbound automation', 'Lead routing'],
+    ad: 'Ex-BDR with 116% of quota seeks buying signals. Will score, prioritize and personalize at scale.',
+    items: ['Clay', 'ZoomInfo', 'HubSpot Sales Hub', 'LinkedIn Sales Navigator', 'Intent signals', 'Account scoring', 'Outbound automation'],
   },
   {
     heading: 'Builder',
-    ad: 'Bootcamp-trained engineer, still writes code daily. APIs a specialty.',
-    items: ['JavaScript', 'React', 'Node.js', 'Express', 'Python', 'SQL', 'Firebase', 'OpenAI API', 'Git'],
+    ad: 'Bootcamp-trained engineer who now builds with AI agents. APIs and prompts a specialty.',
+    items: ['Claude Code', 'MCP', 'Prompt engineering', 'JavaScript', 'React', 'Node.js', 'Python', 'SQL', 'OpenAI API', 'Git'],
   },
   {
     heading: 'Product',

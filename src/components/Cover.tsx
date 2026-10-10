@@ -58,7 +58,7 @@ function Magazine() {
           <p className="kicker text-[9px] text-sun">Cover story</p>
           <p className="mt-1 font-serif text-[2.1rem] leading-[0.92]">The GTM Engineer issue</p>
           <p className="mt-2 text-xs leading-snug text-white/85">
-            How a real estate developer learned to code, then sell, then automate the sale.
+            How a BDR built an AI prospecting engine, hit 116% of quota, then turned it into a new job.
           </p>
         </div>
         <div className="absolute bottom-5 left-5 max-w-[55%]">
@@ -68,8 +68,8 @@ function Magazine() {
           <p className="mt-1 text-[11px] text-white/75">The back issues, p.04</p>
         </div>
         <div className="absolute right-4 top-[38%] max-w-[34%] text-right">
-          <p className="font-serif text-xl leading-none">Inside Sculpt</p>
-          <p className="mt-1 text-[10px] leading-tight text-white/80">Field notes from the Clay conference, p.26</p>
+          <p className="font-serif text-xl leading-none">51% open rate</p>
+          <p className="mt-1 text-[10px] leading-tight text-white/80">The AI email playbook, p.12</p>
         </div>
 
         <div className="absolute right-5 bottom-20 grid h-24 w-24 animate-[spin_16s_linear_infinite] place-items-center rounded-full bg-sun text-center text-[11px] font-black leading-[1.05] text-ink">
@@ -116,8 +116,8 @@ export default function Cover() {
           className="mt-6 max-w-md text-lg leading-relaxed text-ink/80"
         >
           <span className="float-left mr-2 font-serif text-[4.2rem] leading-[0.8] text-rust">I</span>
-          build the systems that turn data into pipeline. Before that I was a founder, a real estate developer, a software
-          engineer, a product manager and a BDR. This is the whole story.
+          build AI-powered systems that turn buying signals into pipeline. Before that I was a founder, a real estate
+          developer, a software engineer, a product manager and a BDR. This is the whole story.
         </motion.p>
 
         <motion.div
