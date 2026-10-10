@@ -5,15 +5,13 @@ import Reveal, { SectionHeading } from './Reveal'
 
 const tapeColors = ['rgba(255,216,77,0.8)', 'rgba(47,91,211,0.45)', 'rgba(194,65,12,0.45)']
 
-// The chapter's photos, dropped onto the page like taped polaroids.
+// The chapter's photos, dropped onto the page like taped polaroids in one
+// horizontal row (scrolls sideways on small screens).
 function Polaroids({ photos }: { photos: Photo[] }) {
   return (
-    <div className="mt-8 flex max-w-[360px] flex-wrap items-start">
+    <div className="-mx-4 flex gap-6 overflow-x-auto px-4 pt-5 pb-8 sm:mx-0 sm:px-1 md:gap-8">
       {photos.map((photo, i) => {
-        const rotate = i % 2 === 0 ? -4 : 3
-        // Portrait photos fan out in a row; wide ones get their own row below.
-        const fanned = i > 0 && !photo.wide && !photos[i - 1].wide
-        const portraits = photos.filter((p) => !p.wide).length
+        const rotate = i % 2 === 0 ? -3 : 2.5
         return (
           <motion.figure
             key={photo.src}
@@ -21,9 +19,7 @@ function Polaroids({ photos }: { photos: Photo[] }) {
             animate={{ opacity: 1, y: 0, rotate, scale: 1 }}
             whileHover={{ rotate: 0, scale: 1.04, zIndex: 10 }}
             transition={{ type: 'spring', stiffness: 180, damping: 18, delay: 0.15 + i * 0.12 }}
-            className={`relative bg-white p-2.5 pb-11 shadow-[0_18px_36px_-12px_rgba(27,26,23,0.4)] ${
-              photo.wide ? 'w-full' : portraits > 1 ? 'w-[58%]' : 'w-[75%]'
-            } ${fanned ? 'mt-10 -ml-[16%]' : ''} ${photo.wide && i > 0 ? 'mt-6' : ''}`}
+            className="relative shrink-0 bg-white p-2.5 pb-11 shadow-[0_18px_36px_-12px_rgba(27,26,23,0.4)]"
           >
             <span
               className="absolute -top-3 left-1/2 h-6 w-20 -translate-x-1/2 -rotate-3"
@@ -33,7 +29,7 @@ function Polaroids({ photos }: { photos: Photo[] }) {
               src={photo.src}
               alt={photo.caption}
               loading="lazy"
-              className={`w-full object-cover ${photo.wide ? 'aspect-[4/3]' : 'aspect-[4/5]'}`}
+              className={`h-52 w-auto object-cover md:h-60 ${photo.wide ? 'aspect-[4/3]' : 'aspect-[4/5]'}`}
             />
             <figcaption className="absolute right-2 bottom-2 left-3 truncate font-hand text-xl">{photo.caption}</figcaption>
           </motion.figure>
@@ -145,7 +141,6 @@ export default function Issues() {
               </p>
               <h3 className="mt-2 font-serif text-5xl leading-[0.9] md:text-6xl">{issue.title}</h3>
               <p className="mt-3 font-serif text-xl text-faded italic">{issue.tagline}</p>
-              {issue.photos && <Polaroids photos={issue.photos} />}
             </header>
             <ul className="space-y-6">
               {issue.roles.map((role) => (
@@ -170,6 +165,11 @@ export default function Issues() {
                 </li>
               ))}
             </ul>
+            {issue.photos && (
+              <div className="-mt-4 md:col-span-2">
+                <Polaroids photos={issue.photos} />
+              </div>
+            )}
           </motion.article>
         </AnimatePresence>
       </div>
