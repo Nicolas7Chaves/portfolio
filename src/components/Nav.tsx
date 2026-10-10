@@ -2,7 +2,6 @@ const links = [
   { href: '#issues', label: 'Issues' },
   { href: '#shipped', label: 'Shipped' },
   { href: '#toolkit', label: 'Toolkit' },
-  { href: '#snapshots', label: 'Snapshots' },
 ]
 
 export default function Nav() {

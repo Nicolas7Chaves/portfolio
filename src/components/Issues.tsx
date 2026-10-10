@@ -1,7 +1,44 @@
 import { useEffect, useState } from 'react'
 import { AnimatePresence, motion } from 'motion/react'
-import { issues, type Issue } from '../data'
+import { issues, type Issue, type Photo } from '../data'
 import Reveal, { SectionHeading } from './Reveal'
+
+const tapeColors = ['rgba(255,216,77,0.8)', 'rgba(47,91,211,0.45)', 'rgba(194,65,12,0.45)']
+
+// The chapter's photos, dropped onto the page like taped polaroids.
+function Polaroids({ photos }: { photos: Photo[] }) {
+  return (
+    <div className="mt-8 flex max-w-[360px] items-start">
+      {photos.map((photo, i) => {
+        const rotate = i % 2 === 0 ? -4 : 3
+        return (
+          <motion.figure
+            key={photo.src}
+            initial={{ opacity: 0, y: 40, rotate: rotate * 3, scale: 0.9 }}
+            animate={{ opacity: 1, y: 0, rotate, scale: 1 }}
+            whileHover={{ rotate: 0, scale: 1.04, zIndex: 10 }}
+            transition={{ type: 'spring', stiffness: 180, damping: 18, delay: 0.15 + i * 0.12 }}
+            className={`relative bg-white p-2.5 pb-11 shadow-[0_18px_36px_-12px_rgba(27,26,23,0.4)] ${
+              photo.wide ? 'w-full' : photos.length > 1 ? 'w-[58%]' : 'w-[75%]'
+            } ${i > 0 ? 'mt-10 -ml-[16%]' : ''}`}
+          >
+            <span
+              className="absolute -top-3 left-1/2 h-6 w-20 -translate-x-1/2 -rotate-3"
+              style={{ background: tapeColors[i % tapeColors.length] }}
+            />
+            <img
+              src={photo.src}
+              alt={photo.caption}
+              loading="lazy"
+              className={`w-full object-cover ${photo.wide ? 'aspect-[4/3]' : 'aspect-[4/5]'}`}
+            />
+            <figcaption className="absolute right-2 bottom-2 left-3 truncate font-hand text-xl">{photo.caption}</figcaption>
+          </motion.figure>
+        )
+      })}
+    </div>
+  )
+}
 
 function useWide() {
   const query = '(min-width: 768px)'
@@ -96,7 +133,7 @@ export default function Issues() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -12 }}
             transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
-            className="grid gap-8 border-t-4 pt-8 md:grid-cols-[280px_1fr] md:gap-16"
+            className="grid gap-8 border-t-4 pt-8 md:grid-cols-[300px_1fr] md:gap-16"
             style={{ borderColor: issue.color === '#ffd84d' ? '#1b1a17' : issue.color }}
           >
             <header>
@@ -105,6 +142,7 @@ export default function Issues() {
               </p>
               <h3 className="mt-2 font-serif text-5xl leading-[0.9] md:text-6xl">{issue.title}</h3>
               <p className="mt-3 font-serif text-xl text-faded italic">{issue.tagline}</p>
+              {issue.photos && <Polaroids photos={issue.photos} />}
             </header>
             <ul className="space-y-6">
               {issue.roles.map((role) => (

@@ -5,7 +5,6 @@ import Cover from './components/Cover'
 import Issues from './components/Issues'
 import Shipped from './components/Shipped'
 import Toolkit from './components/Toolkit'
-import Snapshots from './components/Snapshots'
 import BackCover from './components/BackCover'
 
 export default function App() {
@@ -24,7 +23,6 @@ export default function App() {
         <Issues />
         <Shipped />
         <Toolkit />
-        <Snapshots />
       </main>
       <BackCover />
     </>

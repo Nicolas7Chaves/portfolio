@@ -17,7 +17,6 @@ export const contents = [
   { page: '04', title: 'Back issues', note: 'Six careers, one story', href: '#issues' },
   { page: '12', title: 'Things I shipped', note: 'AI workflows, apps and a hackathon win', href: '#shipped' },
   { page: '20', title: 'Toolkit', note: 'The tools behind the work', href: '#toolkit' },
-  { page: '26', title: 'Snapshots', note: 'Field notes and photos', href: '#snapshots' },
 ]
 
 export type Role = {
@@ -39,6 +38,8 @@ export type Issue = {
   image?: string
   // Show the photo as-is instead of blending it into the cover color (needed on dark covers).
   plainImage?: boolean
+  // Polaroids shown beside the chapter when this issue is picked.
+  photos?: Photo[]
   current?: boolean
   roles: Role[]
 }
@@ -54,6 +55,7 @@ export const issues: Issue[] = [
     color: '#c2410c',
     ink: '#fff7ed',
     image: '/images/carapeace.jpg',
+    photos: [{ src: '/images/carapeace.jpg', caption: 'the Carapeace tees' }],
     roles: [
       { title: 'Co-Founder', company: 'Carapeace (clothing e-commerce)', dates: 'Oct 2016 – Jan 2018' },
       { title: 'Summer Intern', company: 'Mariva Capital Markets', dates: 'Jun 2017' },
@@ -95,6 +97,10 @@ export const issues: Issue[] = [
     color: '#2f5bd3',
     ink: '#eff6ff',
     image: '/images/demo.jpg',
+    photos: [
+      { src: '/images/demoday.jpg', caption: 'demo day!' },
+      { src: '/images/demo.jpg', caption: 'the PayPatrol booth' },
+    ],
     roles: [
       {
         title: 'Software Engineering Diploma',
@@ -144,6 +150,7 @@ export const issues: Issue[] = [
     ink: '#efe9dd',
     image: '/images/wellhub-headshot.jpg',
     plainImage: true,
+    photos: [{ src: '/images/wellhub-headshot.jpg', caption: 'Wellhub era' }],
     roles: [
       {
         title: 'Enterprise Business Development Representative',
@@ -167,6 +174,7 @@ export const issues: Issue[] = [
     color: '#ffd84d',
     ink: '#1b1a17',
     image: '/images/demoday.jpg',
+    photos: [{ src: '/images/sculpt.jpg', caption: "Sculpt, Clay's GTM conference", wide: true }],
     current: true,
     roles: [
       {
@@ -261,11 +269,5 @@ export const toolkit = [
   },
 ]
 
-// Scrapbook photos in /public/images. Entries without `src` show as empty slots.
-export type Photo = { src?: string; caption: string; wide?: boolean }
-
-export const photos: Photo[] = [
-  { src: '/images/demoday.jpg', caption: 'demo day!' },
-  { src: '/images/demo.jpg', caption: 'the PayPatrol booth' },
-  { src: '/images/sculpt.jpg', caption: "Sculpt, Clay's GTM conference", wide: true },
-]
+// A photo in /public/images. `wide` gets a landscape frame instead of portrait.
+export type Photo = { src: string; caption: string; wide?: boolean }
