@@ -169,7 +169,7 @@ export const issues: Issue[] = [
         company: 'Wellhub',
         dates: 'Jul 2026 – Present',
         details:
-          'Turned the AI prospecting workflow I built as a BDR into a full-time job: building the systems behind enterprise go-to-market.',
+          "Enterprise outbound engineer for Wellhub's US Enterprise team. I combine Clay, HubSpot, Salesforce and buying signals to raise both the quality and the volume of outbound.",
       },
     ],
   },
@@ -237,7 +237,7 @@ export const classifieds = [
   {
     heading: 'Go-to-market',
     ad: 'Ex-BDR with 116% of quota seeks buying signals. Will score, prioritize and personalize at scale.',
-    items: ['Clay', 'ZoomInfo', 'HubSpot Sales Hub', 'LinkedIn Sales Navigator', 'Intent signals', 'Account scoring', 'Outbound automation'],
+    items: ['Clay', 'Salesforce', 'HubSpot', 'ZoomInfo', 'LinkedIn Sales Navigator', 'Intent signals', 'Account scoring', 'Outbound automation'],
   },
   {
     heading: 'Builder',
