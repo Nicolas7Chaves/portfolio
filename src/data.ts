@@ -12,9 +12,9 @@ export const profile = {
   resume: null as string | null,
 }
 
-// "In this issue" table of contents on the cover page.
+// "Inside" table of contents on the cover page.
 export const contents = [
-  { page: '04', title: 'Back issues', note: 'Six careers, one story', href: '#issues' },
+  { page: '04', title: 'The volumes', note: 'Six careers, one story', href: '#volumes' },
   { page: '12', title: 'Things I shipped', note: 'AI workflows, apps and a hackathon win', href: '#shipped' },
   { page: '20', title: 'Toolkit', note: 'The tools behind the work', href: '#toolkit' },
 ]
@@ -44,7 +44,7 @@ export type Issue = {
   roles: Role[]
 }
 
-// Career chapters, oldest first, shown as magazine issues on a shelf.
+// Career chapters, oldest first, shown as magazine volumes on a shelf.
 export const issues: Issue[] = [
   {
     number: '01',
@@ -175,7 +175,7 @@ export const issues: Issue[] = [
     year: 'Now',
     title: 'GTM Engineer',
     years: '2026 → now',
-    tagline: 'Where sales, data and code meet. The current issue.',
+    tagline: 'Where sales, data and code meet. The current volume.',
     color: '#ffd84d',
     ink: '#1b1a17',
     image: '/images/sculpt.jpg',

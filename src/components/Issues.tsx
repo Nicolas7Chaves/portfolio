@@ -58,7 +58,7 @@ function IssueCover({ issue, active, wide, onSelect }: { issue: Issue; active: b
       type="button"
       onClick={onSelect}
       aria-pressed={active}
-      aria-label={`Issue ${issue.number}: ${issue.title}`}
+      aria-label={`Volume ${issue.number}: ${issue.title}`}
       initial={false}
       animate={{
         rotateY: active || !wide ? 0 : 32,
@@ -80,7 +80,7 @@ function IssueCover({ issue, active, wide, onSelect }: { issue: Issue; active: b
           <img src={issue.image} alt="" className="absolute inset-0 h-full w-full object-cover opacity-50 mix-blend-multiply" />
         ))}
       <span className="kicker relative flex justify-between text-[9px]">
-        <span>No. {issue.number}</span>
+        <span>Vol. {issue.number}</span>
         <span>{issue.year}</span>
       </span>
       <span className="relative mt-2 font-serif text-[2.1rem] leading-[0.85] md:text-[2.6rem]">{issue.title}</span>
@@ -100,18 +100,18 @@ export default function Issues() {
   const issue = issues[selected]
 
   return (
-    <section id="issues" className="overflow-hidden py-24 md:py-32">
+    <section id="volumes" className="overflow-hidden py-24 md:py-32">
       <div className="mx-auto max-w-6xl px-4 sm:px-8">
         <SectionHeading
           page="04"
-          kicker="Back issues"
+          kicker="The volumes"
           title={
             <>
-              Six issues, <i className="text-cobalt">one</i> story.
+              Six volumes, <i className="text-cobalt">one</i> story.
             </>
           }
         />
-        <p className="-mt-6 mb-4 max-w-md text-faded">Pick an issue off the shelf to read that chapter.</p>
+        <p className="-mt-6 mb-4 max-w-md text-faded">Pick a volume off the shelf to read that chapter.</p>
       </div>
 
       <Reveal>
@@ -138,7 +138,7 @@ export default function Issues() {
           >
             <header>
               <p className="kicker text-faded">
-                No. {issue.number} · {issue.years}
+                Vol. {issue.number} · {issue.years}
               </p>
               <h3 className="mt-2 font-serif text-5xl leading-[0.9] md:text-6xl">{issue.title}</h3>
               <p className="mt-3 font-serif text-xl text-faded italic">{issue.tagline}</p>

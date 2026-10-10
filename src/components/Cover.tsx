@@ -34,7 +34,7 @@ function Magazine() {
       }}
     >
       <motion.a
-        href="#issues"
+        href="#volumes"
         aria-label="Open the cover story"
         style={{ rotateX, rotateY }}
         className="relative block aspect-[3/4] overflow-hidden rounded-[3px] bg-ink text-white shadow-[0_40px_80px_-20px_rgba(27,26,23,0.55),0_8px_20px_-8px_rgba(27,26,23,0.4)]"
@@ -48,15 +48,15 @@ function Magazine() {
 
         <div className="kicker absolute inset-x-4 top-3 z-10 flex justify-between text-[9px] text-white [text-shadow:0_1px_4px_rgba(0,0,0,0.6)]">
           <span>Vol. 06 · {profile.location}</span>
-          <span>Fall 2026 · $0.00</span>
+          <span>Fall 2026</span>
         </div>
-        <p className="absolute inset-x-0 top-5 text-center font-serif text-[clamp(5rem,26vw,8.5rem)] leading-[0.8] tracking-[-0.04em] text-rust">
+        <p className="absolute inset-x-0 top-5 text-center font-serif text-[clamp(5rem,26vw,8.5rem)] leading-[0.8] tracking-[-0.04em] text-bone [text-shadow:0_2px_14px_rgba(27,26,23,0.35)]">
           CHAVES
         </p>
 
         <div className="absolute bottom-24 left-5 max-w-[60%]">
           <p className="kicker text-[9px] text-sun">Cover story</p>
-          <p className="mt-1 font-serif text-[2.1rem] leading-[0.92]">The GTM Engineer issue</p>
+          <p className="mt-1 font-serif text-[2.1rem] leading-[0.92]">The GTM Engineer volume</p>
           <p className="mt-2 text-xs leading-snug text-white/85">
             How a BDR built an AI prospecting engine, hit 116% of quota, then turned it into a new job.
           </p>
@@ -65,7 +65,7 @@ function Magazine() {
           <p className="font-serif text-xl leading-none">
             6 careers, <i>one</i> throughline
           </p>
-          <p className="mt-1 text-[11px] text-white/75">The back issues, p.04</p>
+          <p className="mt-1 text-[11px] text-white/75">The volumes, p.04</p>
         </div>
         <div className="absolute right-4 top-[38%] max-w-[34%] text-right">
           <p className="font-serif text-xl leading-none">51% open rate</p>
@@ -107,7 +107,7 @@ export default function Cover() {
           transition={{ duration: 0.9, delay: 0.3, ease }}
           className="font-serif text-[clamp(3.5rem,8vw,6.5rem)] leading-[0.88] tracking-tight"
         >
-          Nicolas Chaves, <i className="text-rust">in six issues.</i>
+          Nicolas Chaves, <i className="text-rust">in six volumes.</i>
         </motion.h1>
         <motion.p
           initial={{ opacity: 0, y: 30 }}
@@ -126,7 +126,7 @@ export default function Cover() {
           transition={{ duration: 0.9, delay: 0.5, ease }}
           className="mt-10 max-w-md"
         >
-          <p className="kicker mb-2 border-b border-ink pb-2">In this issue</p>
+          <p className="kicker mb-2 border-b border-ink pb-2">Inside</p>
           <ul>
             {contents.map((item) => (
               <li key={item.href}>

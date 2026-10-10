@@ -1,5 +1,5 @@
 const links = [
-  { href: '#issues', label: 'Issues' },
+  { href: '#volumes', label: 'Volumes' },
   { href: '#shipped', label: 'Shipped' },
   { href: '#toolkit', label: 'Toolkit' },
 ]
