@@ -8,9 +8,12 @@ const tapeColors = ['rgba(255,216,77,0.8)', 'rgba(47,91,211,0.45)', 'rgba(194,65
 // The chapter's photos, dropped onto the page like taped polaroids.
 function Polaroids({ photos }: { photos: Photo[] }) {
   return (
-    <div className="mt-8 flex max-w-[360px] items-start">
+    <div className="mt-8 flex max-w-[360px] flex-wrap items-start">
       {photos.map((photo, i) => {
         const rotate = i % 2 === 0 ? -4 : 3
+        // Portrait photos fan out in a row; wide ones get their own row below.
+        const fanned = i > 0 && !photo.wide && !photos[i - 1].wide
+        const portraits = photos.filter((p) => !p.wide).length
         return (
           <motion.figure
             key={photo.src}
@@ -19,8 +22,8 @@ function Polaroids({ photos }: { photos: Photo[] }) {
             whileHover={{ rotate: 0, scale: 1.04, zIndex: 10 }}
             transition={{ type: 'spring', stiffness: 180, damping: 18, delay: 0.15 + i * 0.12 }}
             className={`relative bg-white p-2.5 pb-11 shadow-[0_18px_36px_-12px_rgba(27,26,23,0.4)] ${
-              photo.wide ? 'w-full' : photos.length > 1 ? 'w-[58%]' : 'w-[75%]'
-            } ${i > 0 ? 'mt-10 -ml-[16%]' : ''}`}
+              photo.wide ? 'w-full' : portraits > 1 ? 'w-[58%]' : 'w-[75%]'
+            } ${fanned ? 'mt-10 -ml-[16%]' : ''} ${photo.wide && i > 0 ? 'mt-6' : ''}`}
           >
             <span
               className="absolute -top-3 left-1/2 h-6 w-20 -translate-x-1/2 -rotate-3"

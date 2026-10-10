@@ -54,8 +54,12 @@ export const issues: Issue[] = [
     tagline: 'Started a company before finishing school.',
     color: '#c2410c',
     ink: '#fff7ed',
-    image: '/images/carapeace.jpg',
-    photos: [{ src: '/images/carapeace.jpg', caption: 'the Carapeace tees' }],
+    image: '/images/carapeace-beach.jpg',
+    photos: [
+      { src: '/images/carapeace-beach.jpg', caption: 'shell yeah' },
+      { src: '/images/carapeace.jpg', caption: 'the Carapeace tees' },
+      { src: '/images/carapeace-lifeguard.jpg', caption: 'Miami Beach photo shoot', wide: true },
+    ],
     roles: [
       { title: 'Co-Founder', company: 'Carapeace (clothing e-commerce)', dates: 'Oct 2016 – Jan 2018' },
       { title: 'Summer Intern', company: 'Mariva Capital Markets', dates: 'Jun 2017' },
