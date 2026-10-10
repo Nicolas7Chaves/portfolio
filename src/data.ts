@@ -16,7 +16,7 @@ export const profile = {
 export const contents = [
   { page: '04', title: 'Back issues', note: 'Six careers, one story', href: '#issues' },
   { page: '12', title: 'Things I shipped', note: 'AI workflows, apps and a hackathon win', href: '#shipped' },
-  { page: '20', title: 'Classifieds', note: 'Skills for hire', href: '#classifieds' },
+  { page: '20', title: 'Toolkit', note: 'The tools behind the work', href: '#toolkit' },
   { page: '26', title: 'Snapshots', note: 'Field notes and photos', href: '#snapshots' },
 ]
 
@@ -236,11 +236,11 @@ export const projects: Project[] = [
   },
 ]
 
-// Skills, written as newspaper classified ads.
-export const classifieds = [
+// Skills, grouped by the hat I'm wearing.
+export const toolkit = [
   {
     heading: 'Go-to-market',
-    ad: 'Ex-BDR with 116% of quota seeks buying signals. Will score, prioritize and personalize at scale.',
+    ad: 'Turns buying signals into pipeline: scoring, prioritizing and personalizing outbound at scale.',
     items: ['Clay', 'Salesforce', 'HubSpot', 'ZoomInfo', 'LinkedIn Sales Navigator', 'Intent signals', 'Account scoring', 'Outbound automation'],
   },
   {
@@ -267,5 +267,4 @@ export const photos: Photo[] = [
   { src: '/images/demoday.jpg', caption: 'demo day!' },
   { src: '/images/demo.jpg', caption: 'the PayPatrol booth' },
   { src: '/images/sculpt.jpg', caption: "Sculpt, Clay's GTM conference", wide: true },
-  { caption: 'on the golf course' },
 ]

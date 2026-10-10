@@ -29,7 +29,7 @@ export default function Snapshots() {
 
       <div
         ref={board}
-        className="relative grid grid-cols-2 gap-6 rounded-[3px] bg-paper-2 bg-[radial-gradient(#d9d2c3_1px,transparent_1px)] [background-size:18px_18px] p-6 md:block md:h-[740px] md:p-0"
+        className="relative grid grid-cols-2 gap-6 rounded-[3px] bg-paper-2 bg-[radial-gradient(#d9d2c3_1px,transparent_1px)] [background-size:18px_18px] p-6 md:block md:h-[600px] md:p-0"
       >
         <p className="pointer-events-none absolute bottom-6 left-8 hidden -rotate-3 font-hand text-3xl text-rust md:block">
           psst, drag us around ↗

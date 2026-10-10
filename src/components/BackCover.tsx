@@ -19,7 +19,7 @@ export default function BackCover() {
           Write <i>in.</i>
         </h2>
         <p className="mt-6 max-w-md text-lg text-paper/85">
-          Hiring, building something in GTM, or just want to talk Clay workflows? My inbox is open.
+          Building something in GTM, or just want to swap Clay workflows and AI prospecting ideas? Say hello.
         </p>
         <a
           href={`mailto:${profile.email}`}

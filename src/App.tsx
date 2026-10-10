@@ -4,7 +4,7 @@ import Nav from './components/Nav'
 import Cover from './components/Cover'
 import Issues from './components/Issues'
 import Shipped from './components/Shipped'
-import Classifieds from './components/Classifieds'
+import Toolkit from './components/Toolkit'
 import Snapshots from './components/Snapshots'
 import BackCover from './components/BackCover'
 
@@ -23,7 +23,7 @@ export default function App() {
         <Cover />
         <Issues />
         <Shipped />
-        <Classifieds />
+        <Toolkit />
         <Snapshots />
       </main>
       <BackCover />

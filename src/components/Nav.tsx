@@ -1,7 +1,7 @@
 const links = [
   { href: '#issues', label: 'Issues' },
   { href: '#shipped', label: 'Shipped' },
-  { href: '#classifieds', label: 'Classifieds' },
+  { href: '#toolkit', label: 'Toolkit' },
   { href: '#snapshots', label: 'Snapshots' },
 ]
 
