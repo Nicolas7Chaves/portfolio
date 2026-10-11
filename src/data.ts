@@ -255,7 +255,7 @@ export const toolkit = [
   {
     heading: 'Go-to-market',
     ad: 'Turns buying signals into pipeline: scoring, prioritizing and personalizing outbound at scale.',
-    items: ['Clay', 'Salesforce', 'HubSpot', 'ZoomInfo', 'LinkedIn Sales Navigator', 'Intent signals', 'Account scoring', 'Outbound automation'],
+    items: ['Clay', 'Salesforce', 'HubSpot', 'ZoomInfo', 'Gong', 'LinkedIn Sales Navigator', 'Intent signals', 'Account scoring', 'Outbound automation'],
   },
   {
     heading: 'Builder',
