@@ -21,7 +21,7 @@ export default function Nav() {
           ))}
         </ul>
         <a href="#contact" className="kicker rounded-full bg-ink px-4 py-2 text-paper transition-colors hover:bg-rust">
-          Subscribe
+          Contact
         </a>
       </nav>
     </header>
