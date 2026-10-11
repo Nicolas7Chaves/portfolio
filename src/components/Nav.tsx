@@ -1,7 +1,7 @@
 const links = [
   { href: '#volumes', label: 'Volumes' },
   { href: '#shipped', label: 'Shipped' },
-  { href: '#toolkit', label: 'Toolkit' },
+  { href: '#toolkit', label: 'Skills & Tools' },
 ]
 
 export default function Nav() {

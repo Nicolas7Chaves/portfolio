@@ -16,7 +16,7 @@ export const profile = {
 export const contents = [
   { page: '01', title: 'The volumes', note: 'Six careers, one story', href: '#volumes' },
   { page: '02', title: 'Things I shipped', note: 'AI workflows, apps and a hackathon win', href: '#shipped' },
-  { page: '03', title: 'Toolkit', note: 'The tools behind the work', href: '#toolkit' },
+  { page: '03', title: 'Skills & Tools', note: 'The tools behind the work', href: '#toolkit' },
 ]
 
 export type Role = {

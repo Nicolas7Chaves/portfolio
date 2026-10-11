@@ -7,7 +7,7 @@ export default function Toolkit() {
       <div className="mx-auto max-w-6xl px-4 sm:px-8 [&_.border-ink]:border-paper">
         <SectionHeading
           page="03"
-          kicker="Toolkit"
+          kicker="Skills & Tools"
           title={
             <>
               What's in <i className="text-sun">the toolbox.</i>
