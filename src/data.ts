@@ -209,7 +209,7 @@ export const projects: Project[] = [
     name: 'AI Prospecting Engine',
     kicker: 'Built at Wellhub',
     blurb:
-      'A Claude Code workflow wired into the ZoomInfo MCP. It reads intent signals and news triggers across 600+ enterprise accounts, ranks who to call, and drafts personalized emails that are ready to send. It became the best-performing cadence on the team.',
+      'As a BDR, I created a Claude Code program wired into the ZoomInfo MCP. It reads intent signals and news triggers across 600+ enterprise accounts, ranks who to call, and drafts personalized emails that are ready to send. It became the best-performing cadence on the team.',
     stack: ['Claude Code', 'ZoomInfo MCP', 'Prompt frameworks', 'Account scoring'],
     poster: { big: '51%', small: 'open rate · ~4% reply rate', color: '#2f5bd3' },
     links: [],
