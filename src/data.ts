@@ -62,17 +62,18 @@ export const issues: Issue[] = [
     ],
     roles: [
       { title: 'Co-Founder', company: 'Carapeace (clothing e-commerce)', dates: 'Oct 2016 – Jan 2018' },
-      { title: 'Summer Intern', company: 'Mariva Capital Markets', dates: 'Jun 2017' },
     ],
   },
   {
     number: '02',
-    year: '2018',
-    title: 'Real Estate',
-    years: '2018 – 2023',
+    year: '2017',
+    title: 'Real Estate Finance',
+    years: '2017 – 2023',
     tagline: 'Financial models, investment memos, and a building from the ground up.',
     color: '#3f6b4f',
     ink: '#f0fdf4',
+    // Low-resolution source, so it's shown smaller than the other photos.
+    photos: [{ src: '/images/real-estate-building.webp', caption: 'the multifamily project', small: true }],
     roles: [
       {
         title: 'Project Manager',
@@ -90,6 +91,7 @@ export const issues: Issue[] = [
       },
       { title: 'Intern', company: 'Maynada Capital Advisors', dates: 'Jun 2021 – Aug 2021' },
       { title: 'Real Estate Sales Associate', company: 'BARNES', dates: 'May 2018 – Jun 2018' },
+      { title: 'Summer Intern', company: 'Mariva Capital Markets', dates: 'Jun 2017' },
     ],
   },
   {
@@ -275,4 +277,4 @@ export const toolkit = [
 ]
 
 // A photo in /public/images. `wide` gets a landscape frame instead of portrait.
-export type Photo = { src: string; caption: string; wide?: boolean }
+export type Photo = { src: string; caption: string; wide?: boolean; small?: boolean }

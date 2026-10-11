@@ -30,13 +30,46 @@ function Polaroids({ photos }: { photos: Photo[] }) {
               src={photo.src}
               alt={photo.caption}
               loading="lazy"
-              className={`h-52 w-auto object-cover md:h-60 ${photo.wide ? 'aspect-[4/3]' : 'aspect-[4/5]'}`}
+              className={`w-auto object-cover ${photo.small ? 'h-36 md:h-40' : 'h-52 md:h-60'} ${
+                photo.wide ? 'aspect-[4/3]' : photo.small ? 'aspect-square' : 'aspect-[4/5]'
+              }`}
             />
             <figcaption className="absolute right-2 bottom-2 left-3 truncate font-hand text-xl">{photo.caption}</figcaption>
           </motion.figure>
         )
       })}
     </div>
+  )
+}
+
+// A taped sticky note with an arrow down to the shelf, so it's obvious the covers are clickable.
+function StickyNote() {
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: -20, rotate: -8 }}
+      whileInView={{ opacity: 1, y: 0, rotate: -3 }}
+      whileHover={{ rotate: 0, scale: 1.03 }}
+      viewport={{ once: true }}
+      transition={{ type: 'spring', stiffness: 180, damping: 14, delay: 0.2 }}
+      className="relative -mt-4 mb-2 ml-1 inline-block max-w-[290px] bg-sun px-5 pt-6 pb-5 shadow-[0_14px_24px_-10px_rgba(27,26,23,0.45)]"
+    >
+      <span className="absolute -top-3 left-1/2 h-6 w-20 -translate-x-1/2 rotate-2 bg-paper/70" aria-hidden />
+      <p className="font-hand text-[1.7rem] leading-[1.05] text-ink">
+        Psst! Click a volume on the shelf to read that chapter.
+      </p>
+      <svg
+        className="absolute -bottom-14 left-10 h-16 w-16 text-ink"
+        viewBox="0 0 64 64"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2.5"
+        strokeLinecap="round"
+        aria-hidden
+      >
+        <path d="M10 4 C 6 24, 20 40, 40 52" />
+        <path d="M30 54 L 41 53 L 38 42" />
+      </svg>
+    </motion.div>
   )
 }
 
@@ -111,7 +144,7 @@ export default function Issues() {
             </>
           }
         />
-        <p className="-mt-6 mb-4 max-w-md text-faded">Pick a volume off the shelf to read that chapter.</p>
+        <StickyNote />
       </div>
 
       <Reveal>
