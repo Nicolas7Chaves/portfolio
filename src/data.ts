@@ -72,6 +72,7 @@ export const issues: Issue[] = [
     tagline: 'Financial models, investment memos, and a building from the ground up.',
     color: '#3f6b4f',
     ink: '#f0fdf4',
+    image: '/images/real-estate-building.webp',
     // Low-resolution source, so it's shown smaller than the other photos.
     photos: [{ src: '/images/real-estate-building.webp', caption: 'the multifamily project', small: true }],
     roles: [
@@ -80,14 +81,14 @@ export const issues: Issue[] = [
         company: 'Eastern Atlantic Development',
         dates: 'Apr 2022 – Mar 2023',
         details:
-          'Directed development of a multifamily building, coordinating 20+ people and 5+ subcontractor teams, securing 10–15% cost savings through bid negotiations.',
+          'Ran development of a multifamily building: 20+ people, 5+ subcontractor teams, 10–15% saved on bids.',
       },
       {
         title: 'Real Estate Development Analyst',
         company: 'Eastern Atlantic Development',
         dates: 'Feb 2022 – May 2022',
         details:
-          'Built financial models and investment memos that shaped funding decisions, plus valuation for the sale of two multifamily properties.',
+          'Built the financial models and investment memos behind funding decisions, and valued two properties for sale.',
       },
       { title: 'Intern', company: 'Maynada Capital Advisors', dates: 'Jun 2021 – Aug 2021' },
       { title: 'Real Estate Sales Associate', company: 'BARNES', dates: 'May 2018 – Jun 2018' },
