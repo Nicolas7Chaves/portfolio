@@ -131,6 +131,7 @@ export default function Issues() {
   const wide = useWide()
   const [selected, setSelected] = useState(issues.length - 1)
   const issue = issues[selected]
+  const sidePhotos = !!issue.photos?.every((p) => p.small)
 
   return (
     <section id="volumes" className="overflow-hidden py-24 md:py-32">
@@ -175,6 +176,8 @@ export default function Issues() {
               </p>
               <h3 className="mt-2 font-serif text-5xl leading-[0.9] md:text-6xl">{issue.title}</h3>
               <p className="mt-3 font-serif text-xl text-faded italic">{issue.tagline}</p>
+              {/* Small photos fit beside the roles, so they sit here instead of in a row below. */}
+              {sidePhotos && <Polaroids photos={issue.photos!} />}
             </header>
             <ul className="space-y-6">
               {issue.roles.map((role) => (
@@ -199,7 +202,7 @@ export default function Issues() {
                 </li>
               ))}
             </ul>
-            {issue.photos && (
+            {issue.photos && !sidePhotos && (
               <div className="-mt-4 md:col-span-2">
                 <Polaroids photos={issue.photos} />
               </div>
