@@ -50,7 +50,9 @@ function Magazine() {
           <span>Vol. 06 · {profile.location}</span>
           <span>Fall 2026</span>
         </div>
-        <p className="absolute inset-x-0 top-5 text-center font-serif text-[clamp(5rem,26vw,8.5rem)] leading-[0.8] tracking-[-0.04em] text-bone [text-shadow:0_2px_14px_rgba(27,26,23,0.35)]">
+        <p className="absolute inset-x-0 top-7 text-center font-serif text-[clamp(3.6rem,17vw,5.6rem)] leading-[0.8] tracking-[-0.03em] text-white [text-shadow:0_2px_14px_rgba(27,26,23,0.45)]">
+          NICOLAS
+          <br />
           CHAVES
         </p>
 
@@ -65,11 +67,11 @@ function Magazine() {
           <p className="font-serif text-xl leading-none">
             6 careers, <i>one</i> throughline
           </p>
-          <p className="mt-1 text-[11px] text-white/75">The volumes, p.04</p>
+          <p className="mt-1 text-[11px] text-white/75">The volumes, p.01</p>
         </div>
         <div className="absolute right-4 top-[38%] max-w-[34%] text-right">
           <p className="font-serif text-xl leading-none">51% open rate</p>
-          <p className="mt-1 text-[10px] leading-tight text-white/80">The AI email playbook, p.12</p>
+          <p className="mt-1 text-[10px] leading-tight text-white/80">The AI email playbook, p.02</p>
         </div>
 
         <div className="absolute right-5 bottom-20 grid h-24 w-24 animate-[spin_16s_linear_infinite] place-items-center rounded-full bg-sun text-center text-[11px] font-black leading-[1.05] text-ink">

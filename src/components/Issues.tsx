@@ -103,7 +103,7 @@ export default function Issues() {
     <section id="volumes" className="overflow-hidden py-24 md:py-32">
       <div className="mx-auto max-w-6xl px-4 sm:px-8">
         <SectionHeading
-          page="04"
+          page="01"
           kicker="The volumes"
           title={
             <>

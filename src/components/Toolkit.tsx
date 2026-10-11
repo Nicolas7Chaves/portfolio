@@ -6,7 +6,7 @@ export default function Toolkit() {
     <section id="toolkit" className="bg-ink py-24 text-paper md:py-32">
       <div className="mx-auto max-w-6xl px-4 sm:px-8 [&_.border-ink]:border-paper">
         <SectionHeading
-          page="20"
+          page="03"
           kicker="Toolkit"
           title={
             <>

@@ -62,7 +62,7 @@ export default function Shipped() {
   return (
     <section id="shipped" className="mx-auto max-w-6xl px-4 py-24 sm:px-8 md:py-32">
       <SectionHeading
-        page="12"
+        page="02"
         kicker="Feature"
         title={
           <>

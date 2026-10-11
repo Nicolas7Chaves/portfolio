@@ -14,9 +14,9 @@ export const profile = {
 
 // "Inside" table of contents on the cover page.
 export const contents = [
-  { page: '04', title: 'The volumes', note: 'Six careers, one story', href: '#volumes' },
-  { page: '12', title: 'Things I shipped', note: 'AI workflows, apps and a hackathon win', href: '#shipped' },
-  { page: '20', title: 'Toolkit', note: 'The tools behind the work', href: '#toolkit' },
+  { page: '01', title: 'The volumes', note: 'Six careers, one story', href: '#volumes' },
+  { page: '02', title: 'Things I shipped', note: 'AI workflows, apps and a hackathon win', href: '#shipped' },
+  { page: '03', title: 'Toolkit', note: 'The tools behind the work', href: '#toolkit' },
 ]
 
 export type Role = {
