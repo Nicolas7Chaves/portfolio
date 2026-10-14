@@ -190,7 +190,7 @@ export const issues: Issue[] = [
         company: 'Wellhub',
         dates: 'Jul 2026 – Present',
         details:
-          "Enterprise outbound engineer for Wellhub's US Enterprise team. I combine Clay, HubSpot, Salesforce and buying signals to raise both the quality and the volume of outbound.",
+          "GTMe for Wellhub's US Enterprise team. I build signal-driven outbound systems across Clay, HubSpot, Salesforce, Gong and the rest of our GTM stack, helping reps reach the right accounts at the right time with more relevant messages, at scale.",
       },
     ],
   },
